@@ -5,15 +5,314 @@
 @import url("./_variables.css");
 /* Feel free to add as many of these imports as you need */
 
-body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+header {
+  background-color: var(--color-text-light);
 }
-
-.centered {
+h2.season-header {
+  background-color: #3d604e;
+  height: 100px;
+  color: var(--color-text-light);
   display: flex;
-  justify-content: center;
   align-items: center;
   justify-content: center;
+}
+
+section.header-bar {
+  height: 80px;
+}
+
+img.home-banner {
+  width: 100%;
+}
+
+ul.menu-bar {
+  display: flex;
+  gap: 60px;
+  width: 100%;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  padding-right: 200px;
+}
+
+div.menu-icon {
+  display: flex;
+  padding-right: 100px;
+  align-items: center;
+  gap: 60px;
+}
+
+.menu-bar-item {
+  color: var(--color-text-gray);
+  font-family: "Arial";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.menu-bar-item--selected {
+  font-weight: bold;
+}
+
+section.header-bar {
+  display: flex;
+  padding-left: 100px;
+}
+
+img.menbg {
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+img.womenbg {
+  padding-right: 100px;
+  padding-top: 100px;
+}
+
+section.men-womenbg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+h1.top-collection {
+  padding-top: 50px;
+  color: var(--color-text-dark);
   text-align: center;
+  font-family: "Arial Rounded MT Bold";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p.top-collection-detail {
+  padding-left: 72px;
+  padding-right: 72px;
+  color: var(--color-text-dark);
+  text-align: center;
+  font-family: "Arial";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.new-product-label {
+  
+}
+
+.box{
+width: 382px;
+height: 643px;
+border: 1px solid black;
+margin: 0;
+padding: 0;
+border-radius: 20px;
+border: 1px solid #CDCDCD;
+}
+
+div.top-product-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 240px;
+  padding-bottom: 100px;
+}
+
+div.collection-star-icon {
+  color: var(--color-icon-product);
+}
+ion-icon.color1 {
+  color: var(--color-icon-product);
+}
+ion-icon.color2 {
+  color: var(--color-text-gray);
+}
+ion-icon.color3 {
+  color: var(--color-text-dark);
+}
+
+div.product-list {
+  padding-bottom: 100px;
+}
+div.product-list-line1 {
+  display: flex;
+  justify-content: center;
+  gap: 240px;
+
+  padding-top: 100px;
+}
+
+div.product-list-line2 {
+  display: flex;
+  justify-content: center;
+  gap: 240px;
+  padding-top: 100px;
+}
+
+p.product-name1,
+p.product-name2,
+p.product-name3,
+p.product-name4,
+p.product-name5,
+p.product-name6 {
+  color: var(--color-text-dark);
+  font-family: "Arial";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+p.product-price1,
+p.product-price2,
+p.product-price3,
+p.product-price4,
+p.product-price5,
+p.product-price6 {
+  color: var(--color-text-dark);
+  font-family: "Arial";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+div.footer-bar {
+  display: flex;
+  width: 100%;
+  background-color: var(--color-text-footer);
+  height: 535px;
+  gap: 300px;
+}
+
+img.footer-logo {
+  padding-left: 130px;
+  height: 172px;
+}
+
+p.footer-detail {
+  width: 600px;
+  padding-left: 130px;
+  color: var(--color-text-gray);
+  font-family: "Arial";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  justify-content: left;
+}
+
+div.footer-icon {
+  display: flex;
+  padding-left: 120px;
+  gap: 50px;
+}
+
+div.footer-right-subcribe {
+  display: flex;
+  gap: 10px;
+  padding: 30px;
+}
+
+button.button-subcribe {
+  width: 118px;
+  height: 38px;
+  border-radius: 10px;
+  color: var(--color-text-light);
+  font-family: "Arial Rounded MT Bold";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: var(--color-text-sub);
+}
+
+div.footer-link-store {
+  display: flex;
+  padding-right: 100px;
+  gap: 200px;
+}
+
+p.footer-shop {
+  display: flex;
+  color: var(--color-text-dark);
+  font-family: "Arial";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.footer-shop-details a {
+  color: var(--color-text-gray);
+  font-family: "Arial";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+
+  text-decoration: none;
+}
+
+p.footer-help {
+  display: flex;
+  color: var(--color-text-dark);
+  font-family: "Arial";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.footer-help-details {
+  color: var(--color-text-gray);
+  font-family: "Arial";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+}
+p.footer-info {
+  display: flex;
+  color: var(--color-text-dark);
+  font-family: "Arial";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.footer-info-details {
+  color: var(--color-text-gray);
+  font-family: "Arial";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+
+div.footer-location,
+div.footer-email,
+div.footer-phone,
+div.footer-fax {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+}
+
+p.footer-location-text,
+p.footer-email-text,
+p.footer-phone-text,
+p.footer-fax-text {
+  margin: 0;
+}
+
+h1.product-title {
+  color: var(--color-text-gray);
+  text-align: left;
+  font-family: "Arial Rounded MT Bold";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 100px;
 }
