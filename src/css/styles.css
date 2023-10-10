@@ -172,8 +172,6 @@ div.product-list-line2 {
   padding-top: 100px;
 }
 
-
-
 div.footer-bar {
   display: flex;
   width: 100%;
@@ -333,28 +331,114 @@ h1.product-title {
 /* product-detail */
 
 div.product-detail-bar {
-display: flex;
-gap:2500px;
-padding-left: 50px;
-background-color: var(--color-link-bar)
+  display: flex;
+  gap: 2500px;
+  padding-left: 50px;
+  background-color: var(--color-link-bar);
 }
 
-h3.product-link, h3.product-detail-link {
-color:var(--color-text-gray);
-font-family: Arial;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+h3.product-link,
+h3.product-detail-link {
+  color: var(--color-text-gray);
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.box-product-detail {
+.box-product-detail-left {
   width: 380px;
   height: 500px;
   border: 1px solid black;
   margin: 0;
-  padding: 0;
   border-radius: 20px;
   border: 1px solid #cdcdcd;
   padding-top: 35px;
   padding-left: 35px;
+}
+.box-size {
+  width: 119.923px;
+  height: 67px;
+  background-color: var(--color-size);
+}
+.box-size-xxl {
+  width: 119.923px;
+  height: 67px;
+  background-color: var(--color-size-xxl);
+}
+.product-detail {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.product-detail-right {
+  padding-left: 70px;
+  
+}
+.collection-product-color {
+  display: flex;
+}
+.text-right-detail {
+  display: flex;
+}
+.product-text-detail {
+  color: var(--color-text-dark);
+  font-family: "Arial";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.text-color,
+.text-detail,
+.quantity {
+  color: var(--color-text-dark);
+  font-family: "Arial";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.select-size {
+  color: var(--color-text-sub);
+  font-family: "Arial";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 30px;
+  padding-right: 100px;
+}
+.find-size {
+  color: var(--color-text-gray);
+  font-family: "Arial";
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.box-selection-size {
+  display: flex;
+  gap: 20px;
+ color: var(--color-text-dark);
+  font-family: "Arial";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+}
+
+
+
+
+.button-add-to-cart {
+  width: 177px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: var(--color-text-sub);
 }
