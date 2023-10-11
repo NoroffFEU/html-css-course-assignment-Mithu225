@@ -14,7 +14,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
   </head>
-<body>
+  <body>
     <header>
       <div>
         <h2 class="season-header">Season Sale - Up to 70% Off</h2>
@@ -24,12 +24,12 @@
         <img src="assets/images/Logo.jpg" />
         <ul class="menu-bar">
           <li>
-            <a class="menu-bar-item " href="index.html"
-              >HOME</a
-            >
+            <a class="menu-bar-item" href="index.html">HOME</a>
           </li>
           <li>
-            <a class="menu-bar-item menu-bar-item--selected" href="product.html">PRODUCT</a>
+            <a class="menu-bar-item menu-bar-item--selected" href="product.html"
+              >PRODUCT</a
+            >
           </li>
           <li><a class="menu-bar-item" href="about.html">ABOUT</a></li>
           <li>
@@ -41,10 +41,58 @@
           <ion-icon size="large" name="cart"></ion-icon>
         </div>
       </section>
-      <section>
-        <img class="home-banner" src="assets/images/Home banner.jpg" />
-      </section>
     </header>
+    <div class="checkout-detail-bar">
+      <h3 class="product-link">CHECKOUT</h3>
+      <h3 class="product-detail-link">HOME/CHECKOUT</h3>
+    </div>
+    <div class="checkout-info">
+      <div class="checkout-left-side">
+        <div class="text-name-info">
+          <label for="fname">First name</label>
+
+          <label for="lname">Last name</label>
+        </div>
+        <div class="name-box">
+          <input
+            type="first-name"
+            id="fname"
+            name="fname"
+            style="width: 300px"
+          />
+          <input
+            type="last-name"
+            id="lname"
+            name="lname"
+            style="width: 300px"
+          />
+        </div>
+
+        <div class="phone-email">
+          <label for="phone">Phone</label>
+          <label for="email">Email</label>
+        </div>
+        <div class="phone-email-box">
+          <input
+            type="phone-number"
+            id="phone"
+            name="phonenumber"
+            style="width: 300px"
+          />
+          <input
+            type="last-name"
+            id="lname"
+            name="lname"
+            style="width: 300px"
+          />
+        </div>
+
+        <p>Address</p>
+        <p>Country</p>
+        <p>Postal code</p>
+      </div>
+      <div class="checkout-right-side"></div>
+    </div>
     <footer>
       <div class="footer-bar">
         <div class="footer-left">
@@ -70,7 +118,7 @@
                 <input
                   type="email"
                   id="email"
-                  style="height: 40px"
+                  style="width: 240px; height: 40px"
                   placeholder="Enter your email"
                 />
               </form>
@@ -123,4 +171,5 @@
         </div>
       </div>
     </footer>
-</body>
+  </body>
+</html>

@@ -209,9 +209,8 @@ div.footer-right-subcribe {
   padding: 30px;
 }
 
-button.button-subcribe {
-  width: 118px;
-  height: 38px;
+.button-subcribe {
+  padding:10px 20px;
   border-radius: 10px;
   color: var(--color-text-light);
   font-family: "Arial Rounded MT Bold";
@@ -220,6 +219,7 @@ button.button-subcribe {
   font-weight: 400;
   line-height: normal;
   background-color: var(--color-text-sub);
+  text-decoration: none;
 }
 
 div.footer-link-store {
@@ -298,6 +298,13 @@ p.footer-email-text,
 p.footer-phone-text,
 p.footer-fax-text {
   margin: 0;
+}
+
+.footer-subcribe {
+border-radius: 5px;
+border: 1px solid #E1DBDB;
+background-color: var(--color-text-light);
+color:var(--color-text-gray)
 }
 
 /*product page*/
@@ -482,4 +489,18 @@ font-family: Arial;
 font-size: 25px;
 font-style: normal;
 font-weight: 400;
+}
+
+/* checkout page */
+
+.text-name-info, .phone-email{
+  display:flex;
+  gap:350px;
+}
+
+.name-box, .phone-email-box{
+  display: flex;
+  gap: 120px;
+  
+height: 40px;
 }
