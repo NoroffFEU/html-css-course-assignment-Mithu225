@@ -356,25 +356,16 @@ h3.product-detail-link {
   padding-top: 35px;
   padding-left: 35px;
 }
-.box-size {
-  width: 119.923px;
-  height: 67px;
-  background-color: var(--color-size);
-}
-.box-size-xxl {
-  width: 119.923px;
-  height: 67px;
-  background-color: var(--color-size-xxl);
-}
+
 .product-detail {
   display: flex;
   justify-content: center;
   padding-top: 100px;
+  padding-bottom:100px;
 }
 
 .product-detail-right {
   padding-left: 70px;
-  
 }
 .collection-product-color {
   display: flex;
@@ -391,8 +382,7 @@ h3.product-detail-link {
   line-height: normal;
 }
 .text-color,
-.text-detail,
-.quantity {
+.text-detail {
   color: var(--color-text-dark);
   font-family: "Arial";
   font-size: 25px;
@@ -423,22 +413,73 @@ h3.product-detail-link {
 .box-selection-size {
   display: flex;
   gap: 20px;
- color: var(--color-text-dark);
-  font-family: "Arial";
+}
+
+.box-small-size {
+  width: 119.923px;
+  height: 67px;
+  background-color: var(--color-size);
+  text-align: center;
+  padding: 20px;
+  font-family: Arial;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  
+}
+.box-large-size {
+  width: 119.923px;
+  height: 67px;
+  background-color: var(--color-size-xxl);
+  text-align: center;
+  padding: 20px;
+  font-family: Arial;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
 }
 
-
-
-
 .button-add-to-cart {
-  width: 177px;
-  height: 39px;
+  padding:14px 40px;
   flex-shrink: 0;
   border-radius: 10px;
   background-color: var(--color-text-sub);
+  color: var(--color-text-light);
+  font-family: "Arial Rounded MT Bold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+.button-buy-now {
+  padding:14px 40px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: var(--color-text-sub);
+  color: var(--color-text-light);
+  font-family: "Arial Rounded MT Bold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+.product-description {
+  color: var(--color-text-dark);
+  font-family: Arial;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+}
+.text-description {
+  width: 700px;
+}
+.button-cart {
+  padding-top:30px;
+}
+
+.quantity-product {
+color: var(--color-text-dark);
+font-family: Arial;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
 }
