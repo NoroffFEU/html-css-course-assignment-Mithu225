@@ -586,7 +586,8 @@ h3.product-detail-link {
   background-color: var(--color-button-checkout);
 }
 
-.purchase, .button-view-cart {
+.purchase,
+.button-view-cart {
   width: 116px;
   height: 40px;
   flex-shrink: 0;
@@ -743,53 +744,52 @@ h3.product-detail-link {
 }
 .message-subscribe {
   color: var(--color-sub-thanks);
-text-align: center;
-font-family: Arial;
-font-size: 50px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-position: absolute;
-bottom: 700px;
-right: 850px
+  text-align: center;
+  font-family: Arial;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  bottom: 700px;
+  right: 850px;
 }
 .sub-back-home {
   position: absolute;
-  bottom:10px;
+  bottom: 10px;
   left: 750px;
 }
 
 /* submission */
-.image-submission >img {
+.image-submission > img {
   width: 100%;
   position: relative;
 }
 
 .mess-thank {
   color: var(--color-submission);
-font-family: "Aref Ruqaa";
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-align: center;
+  font-family: "Aref Ruqaa";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
 }
 .mess-submission {
   color: var(--color-submission);
-text-align: center;
-font-family: "Arial";
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-padding-top: 50px;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 50px;
 }
 
 .message-submission-page {
   position: absolute;
   top: 800px;
   left: 800px;
-
 }
 
 .submission-button-back-home {
@@ -799,15 +799,24 @@ padding-top: 50px;
 }
 
 /* add to cart */
-.image-add-cart >img {
+.image-add-cart > img {
   width: 100%;
   position: relative;
 }
 
 .button-back-view-cart {
   display: flex;
-gap: 50px;
-position: absolute;
-top:1300px;
-left: 700px;
+  gap: 50px;
+  position: absolute;
+  top: 1300px;
+  left: 700px;
+  transform: rotate(4deg);
+}
+.button-view-cart {
+  width: 116px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: var(--color-text-dark);
+  color: var(--color-text-light);
 }
