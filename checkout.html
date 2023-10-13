@@ -48,50 +48,126 @@
     </div>
     <div class="checkout-info">
       <div class="checkout-left-side">
-        <div class="text-name-info">
-          <label for="fname">First name</label>
+        <p class="billing">Billing Details</p>
+        <form>
+          <div class="text-name-info">
+            <div class="first-name-info">
+              <label for="fname">First name<br /><br /></label>
+              <input
+                class="fname-text-box"
+                type="text"
+                id="fname"
+                name="fname"
+              />
+            </div>
+            <div class="last-name-info">
+              <label for="lname">Last name<br /><br /></label>
+              <input
+                class="lname-text-box"
+                type="text"
+                id="lname"
+                name="lname"
+              />
+            </div>
+          </div>
+          <div class="phone-email-info">
+            <div class="phone-info">
+              <br /><label for="phone">Phone<br /><br /></label>
+              <input
+                class="phone-text-box"
+                type="number"
+                id="phone"
+                name="phone"
+              />
+            </div>
+            <div class="email-info">
+              <br />
+              <label for="email">Email<br /><br /></label>
+              <input
+                class="email-text-box"
+                type="text"
+                id="email"
+                name="email"
+              />
+            </div>
+          </div>
 
-          <label for="lname">Last name</label>
-        </div>
-        <div class="name-box">
-          <input
-            type="first-name"
-            id="fname"
-            name="fname"
-            style="width: 300px"
-          />
-          <input
-            type="last-name"
-            id="lname"
-            name="lname"
-            style="width: 300px"
-          />
-        </div>
+          <div class="address-info">
+            <br /><label for="address">Address<br /><br /></label>
+            <input
+              class="address-text-box"
+              type="text"
+              id="address"
+              name="address"
+            />
+          </div>
 
-        <div class="phone-email">
-          <label for="phone">Phone</label>
-          <label for="email">Email</label>
-        </div>
-        <div class="phone-email-box">
-          <input
-            type="phone-number"
-            id="phone"
-            name="phonenumber"
-            style="width: 300px"
-          />
-          <input
-            type="last-name"
-            id="lname"
-            name="lname"
-            style="width: 300px"
-          />
-        </div>
+          <div class="country-info">
+            <br /><label for="country">Country<br /><br /></label>
+            <input
+              class="country-text-box"
+              type="text"
+              id="country"
+              name="country"
+            />
+          </div>
 
-        <p>Address</p>
-        <p>Country</p>
-        <p>Postal code</p>
+          <div class="postal-info">
+            <br /><label for="postal-code">Postal code <br /><br /></label>
+            <input
+              class="postal-text-box"
+              type="number"
+              id="postal-code"
+              name="postal-code"
+            />
+          </div>
+        </form>
+        <div class="button-shopping-purchase">
+         <a href="index.html"> <button class="con-shopping">CONTINUE SHOPPING</button></a>
+          <a href="checkout-success.html"><button class="purchase">PURCHASE</button></a>
+        </div>
       </div>
-      <div class="checkout-right-side"></div>
+      <div class="checkout-right-side">
+        <p class="payment">Payment Method</p>
+        <div class="img-card">
+          <img src="assets/images/Payment-visa.jpg" />
+          <img src="assets/images/Payment-master.jpg" />
+        </div>
+
+        <div class="card-info">
+          <br /><label for="card-number">Card Number<br /><br /></label>
+          <input
+            class="card-text-box"
+            type="number"
+            id="card-number"
+            name="card-number"
+           
+          />
+        </div>
+
+        <div class="name-card-info">
+          <br /><label for="name-card">Name on Card<br /><br /></label>
+          <input
+            class="name-card-text-box"
+            type="text"
+            id="name-card"
+            name="name-card"
+            
+          />
+        </div>
+        <div class="expired-date-cvc">
+          <div class="expired">
+            <br /><label for="expired">Expired Date<br /><br /></label>
+            <input class="expired-text-box" type="month id="expired"
+            name="expired" placeholder="MM/YY" />
+          </div>
+          <div class="cvc-number">
+            <br />
+            <label for="cvc">CVC<br /><br /></label>
+            <input class="cvc-text-box" type="number" id="cvc" name="cvc"placeholder="123" />
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
       <div class="footer-bar">
@@ -112,18 +188,18 @@
         </div>
 
         <div class="footer-right">
-          <div class="footer-right-subcribe">
-            <div class="email-subcribe">
-              <form action="/login" class="footer-subcribe">
+          <div class="footer-right-subscribe">
+            <div class="email-subscribe">
+              <form action="/login" class="footer-subscribe">
                 <input
                   type="email"
                   id="email"
-                  style="width: 240px; height: 40px"
+                  class="form-input"
                   placeholder="Enter your email"
                 />
               </form>
             </div>
-            <button class="button-subcribe">SUBCRIBE</button>
+            <a href="subscribed.html"><button class="button-subscribe">SUBSCRIBE</button></a>
           </div>
           <div class="footer-link-store">
             <div class="footer-right-shop">

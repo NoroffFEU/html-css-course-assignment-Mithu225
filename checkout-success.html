@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rainyday | Checkout</title>
+    <title>Rainyday | Checkout success</title>
     <link rel="stylesheet" href="src/css/styles.css" />
     <script
       type="module"
@@ -24,10 +24,10 @@
         <img src="assets/images/Logo.jpg" />
         <ul class="menu-bar">
           <li>
-            <a class="menu-bar-item menu-bar-item--selected" href="index.html">HOME</a>
+            <a class="menu-bar-item" href="index.html">HOME</a>
           </li>
           <li>
-            <a class="menu-bar-item " href="product.html"
+            <a class="menu-bar-item menu-bar-item--selected" href="product.html"
               >PRODUCT</a
             >
           </li>
@@ -42,9 +42,59 @@
         </div>
       </section>
     </header>
-    <section>
-        <img src="assets/images/Subscribed.jpg" alt="Thanks for subcribed" />
-    </section>
+    <div class="checkout-success">
+      <img src="assets/images/Vector.png" />
+      <p class="thanks-text">Thank you for your purchase!</p>
+      <p class="checkout-message">
+        You will receive an order confirmation email with details of your order
+        and a link to track its progress
+      </p>
+    </div>
+    <div class="order-info">
+      <div class="order-info-left">
+        <div class="orderID">
+          <p class="order">Order ID :</p>
+          <p class="IDnumber">0000123456</p>
+        </div>
+
+        <div class="orderDate">
+          <p class="order-date-text">Order Date :</p>
+          <p class="date-number">0000123456</p>
+        </div>
+      </div>
+      <div class="order-info-right">
+        <p class="delivery-info">Deliver to: House no.00, Street A, City</p>
+      </div>
+      </div>
+      <div class="items-info">
+        <div class="checkout-info-left">
+          <img src="assets/images/Checkout success.png" />
+        </div>
+        <div class="checkout-info-center">
+          <p>BLACK M13</p>
+          <p>Size: M</p>
+          <p>Qty:1</p>
+        </div>
+        <div class="checkout-info-right">
+          <p>Total</p>
+          <p>$250</p>
+        </div>
+      </div>
+    </div>
+    <div class="checkout-amount">
+        <div class="shipping">
+            <p>Shipping:</p>
+            <p>$0.0</p>
+        </div>
+        <hr size="1" width="50%" color="black">
+        <div class="total">
+            <p>Total:</p>
+            <p>$250</p>
+        </div>
+    </div>
+    <a href="index.html"
+              ><button class="button-back-home">CONTINUE SHOPPING</button></a
+            >
     <footer>
       <div class="footer-bar">
         <div class="footer-left">
@@ -64,18 +114,20 @@
         </div>
 
         <div class="footer-right">
-          <div class="footer-right-subcribe">
-            <div class="email-subcribe">
-              <form action="/login" class="footer-subcribe">
+          <div class="footer-right-subscribe">
+            <div class="email-subscribe">
+              <form action="/login" class="footer-subscribe">
                 <input
                   type="email"
                   id="email"
-                  style="height: 40px"
+                  class="form-input"
                   placeholder="Enter your email"
                 />
               </form>
             </div>
-            <button class="button-subcribe">SUBCRIBE</button>
+            <a href="subscribed.html"
+              ><button class="button-subscribe">SUBSCRIBE</button></a
+            >
           </div>
           <div class="footer-link-store">
             <div class="footer-right-shop">
