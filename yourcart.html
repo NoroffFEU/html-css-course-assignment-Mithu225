@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rainyday | Add to Cart</title>
+    <title>Rainyday | Your Cart</title>
     <link rel="stylesheet" href="src/css/styles.css" />
     <script
       type="module"
@@ -14,6 +14,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
   </head>
+
   <body>
     <header>
       <div>
@@ -24,12 +25,12 @@
         <img src="assets/images/Logo.jpg" />
         <ul class="menu-bar">
           <li>
-            <a class="menu-bar-item menu-bar-item--selected" href="index.html"
-              >HOME</a
-            >
+            <a class="menu-bar-item" href="index.html">HOME</a>
           </li>
           <li>
-            <a class="menu-bar-item" href="product.html">PRODUCT</a>
+            <a class="menu-bar-item menu-bar-item--selected" href="product.html"
+              >PRODUCT</a
+            >
           </li>
           <li><a class="menu-bar-item" href="about.html">ABOUT</a></li>
           <li>
@@ -42,15 +43,37 @@
         </div>
       </section>
     </header>
-    <div class="image-add-cart">
-      <img src="assets/images/Add to cart.jpg" />
 
-      <div class="button-back-view-cart">
+    <div class="your-cart-title">Your Cart
+
+    </div>
+    <div class="image-your-cart">
+      <img src="assets/images/1600x800_Header_2_2048x.webp" />
+
+      <div class="your-cart-table">
+        <table>
+          <tr class="cart-info-column">
+            <th></th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Total</th>
+          </tr>
+          <tr class="cart-info-row">
+            <td><ion-icon class="bin" size ="large" name="trash-bin"></ion-icon></td>
+            <td><img src="assets/images/selection-product.jpg" /></td>
+            <td>$250</td>
+            <td>1</td>
+            <td>$250</td>
+          </tr>
+        </table>
+      </div>
+      <div class="button-back-checkout">
         <a href="index.html"
-          ><button class="button-back-home">CONTINUE SHOPPING</button></a
+          ><button class="button-back-home-white">CONTINUE SHOPPING</button></a
         >
-        <a href="yourcart.html"
-          ><button class="button-view-cart">VIEW CART</button></a
+        <a href="checkout.html"
+          ><button class="button-checkout">CHECK OUT</button></a
         >
       </div>
     </div>
