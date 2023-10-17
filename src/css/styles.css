@@ -1074,15 +1074,65 @@ cursor: pointer;
 
 .login-banner {
   width: 100%;
+  position: relative;
 }
 
+.account-form {
+  position: absolute;
+  top: 300px;
+  left: 150px;
+}
 .login-title {
   width: 173px;
 height: 24px;
 flex-shrink: 0;
-color: var(--color-text-sub);
+color: var(--color-text-light);
 font-family: "Arial";
 font-size: 25px;
 font-style: normal;
 font-weight: 700;
 }
+
+.user-login, .password-login , .cant-login, .reset{
+width: 180px;
+flex-shrink: 0;
+color:var(--color-text-light);
+font-family: "Arial";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal
+}
+
+.acc-text-box, .pw-text-box {
+  width: 300px;
+height: 41px;
+flex-shrink: 0;
+border-radius: 5px;
+border: 1px solid #BBB6B6;
+background-color: var(--color-text-light);
+
+}
+
+.button-login {
+  width: 92px;
+color:var(--color-size);
+font-family: "Arial Rounded MT Bold";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+background-color: var(--color-text-dark);
+height: 39px;
+flex-shrink: 0;
+border-radius: 10px;
+}
+
+.button-login-page {
+padding-top:30px;
+}
+
+.login {
+  display: flex;
+  
+}
+
