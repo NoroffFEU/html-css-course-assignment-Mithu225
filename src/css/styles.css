@@ -723,6 +723,10 @@ h3.product-detail-link {
   gap: 90px;
 }
 
+.button-back{
+  padding-bottom: 100px;
+  margin-left: 800px;
+}
 .button-back-home {
   width: 211px;
   height: 40px;
@@ -736,6 +740,7 @@ h3.product-detail-link {
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
+  
 }
 /* subscribe page */
 .image-thanks {
@@ -769,8 +774,8 @@ h3.product-detail-link {
   position: relative;
 }
 .submission-banner {
- width: 100%;
- height: 1300px;
+  width: 100%;
+  height: 1300px;
 }
 .mess-thank {
   color: var(--color-submission);
@@ -796,29 +801,30 @@ h3.product-detail-link {
   position: absolute;
   top: 400px;
   left: 1100px;
-
 }
 
 .submission-button-back-home {
   position: absolute;
   bottom: 460px;
- right: 1380px;
+  right: 1380px;
 }
 
 /* add to cart */
-.image-add-cart > img {
-  width: 100%;
-  height: 1200px;
+.add-cart {
   position: relative;
 }
 
+.cart-banner {
+  width: 100%;
+  height: 1200px;
+}
 .button-back-view-cart {
   display: flex;
   gap: 50px;
   font-family: "Arial";
   position: absolute;
-  top: 1000px;
-  left: 950px;
+  top: 800px;
+  left: 1150px;
   transform: rotate(4deg);
 }
 .button-view-cart {
@@ -832,10 +838,13 @@ h3.product-detail-link {
 }
 
 /* your cart page */
-.image-your-cart > img {
-  width: 100%;
-  height: 1800px;
+.your-cart {
   position: relative;
+}
+
+.your-cart-banner {
+  width: 100%;
+  height: 1300px;
 }
 
 .your-cart-title {
@@ -851,12 +860,12 @@ h3.product-detail-link {
   line-height: normal;
   z-index: 1;
   position: absolute;
-  top: 400px;
+  top: 300px;
   left: 1300px;
 }
 table {
   position: absolute;
-  top: 550px;
+  top: 230px;
   left: 1100px;
   width: 777px;
   height: 280px;
@@ -912,17 +921,20 @@ td {
 
 .button-back-checkout {
   position: absolute;
-  bottom: 450px;
+  bottom: 650px;
   left: 1300px;
   display: flex;
   gap: 50px;
 }
 
 /* about */
+.about {
+   position: relative;
+}
 .about-banner {
   width: 100%;
   height: 500px;
-  position: relative;
+ 
 }
 
 .about-slogan-row1 {
@@ -938,7 +950,7 @@ td {
   font-weight: 700;
   line-height: normal;
   position: absolute;
-  top: 300px;
+  top: 80px;
   left: 1000px;
 }
 
@@ -951,7 +963,7 @@ td {
   font-weight: 400;
   line-height: normal;
   position: absolute;
-  top: 430px;
+  top: 200px;
   left: 950px;
 }
 .story-top {
@@ -1019,70 +1031,70 @@ td {
 }
 
 .form-title {
-
-color:var(--color-text-dark);
-font-family: "Arial";
-font-size: 50px;
-font-style: normal;
-font-weight: 700;
-
+  color: var(--color-text-dark);
+  font-family: "Arial";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
 }
 
-.user-info ,.type-message, .telephone-info {
+.user-info,
+.type-message,
+.telephone-info {
   width: 220.57px;
-flex-shrink: 0;
-color:var(--color-text-gray);
-font-family: "Arial";
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  flex-shrink: 0;
+  color: var(--color-text-gray);
+  font-family: "Arial";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.username-text-box, .telephone-text-box{
-width: 411px;
-height: 41px;
-flex-shrink: 0;
-border-radius: 5px;
-border: 1px solid #BBB6B6;
-background-color: var(--color-text-light);
+.username-text-box,
+.telephone-text-box {
+  width: 411px;
+  height: 41px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #bbb6b6;
+  background-color: var(--color-text-light);
 }
 
 .message-area {
   width: 411px;
-height: 148px;
-flex-shrink: 0;
-border-radius: 5px;
-border: 1px solid #BBB6B6;
-background: var(--color-text-light);
+  height: 148px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #bbb6b6;
+  background: var(--color-text-light);
 }
 
-.submission-form, .button-send-message {
+.submission-form,
+.button-send-message {
   padding-left: 120px;
-  padding-top:50px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
 .button-send {
   color: var(--color-text-light);
-font-family: "Arial";
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-width: 137px;
-height: 57px;
-flex-shrink: 0;
-border-radius: 10px;
-background-color: var(--color-button-send);
-cursor: pointer;
+  font-family: "Arial";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  width: 137px;
+  height: 57px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: var(--color-button-send);
+  cursor: pointer;
 }
 
 /* login page */
 
-
-.image-login {
+.login {
   position: relative;
-  
 }
 .login-banner {
   width: 100%;
@@ -1091,11 +1103,9 @@ cursor: pointer;
   position: absolute;
   top: 0px;
   left: 5px;
-  background-color:#ffffff27;
-  width: 800px;
-  height:800px;
- 
-  
+  background-color: #ffffff27;
+  width: 1000px;
+  height: 1065px;
 }
 
 .form-info {
@@ -1106,58 +1116,56 @@ cursor: pointer;
 }
 .login-title {
   width: 173px;
-height: 24px;
-flex-shrink: 0;
-color: var(--color-text-light);
-font-family: "Arial";
-font-size: 25px;
-font-style: normal;
-font-weight: 700;
-
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--color-text-light);
+  font-family: "Arial";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
 }
 
-.user-login, .password-login , .cant-login, .reset{
-width: 180px;
-flex-shrink: 0;
-color:var(--color-text-light);
-font-family: "Arial";
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal
+.user-login,
+.password-login,
+.cant-login,
+.reset {
+  width: 180px;
+  flex-shrink: 0;
+  color: var(--color-text-light);
+  font-family: "Arial";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.acc-text-box, .pw-text-box {
+.acc-text-box,
+.pw-text-box {
   width: 300px;
-height: 41px;
-flex-shrink: 0;
-border-radius: 5px;
-border: 1px solid #BBB6B6;
-background-color: var(--color-text-light);
-
+  height: 41px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #bbb6b6;
+  background-color: var(--color-text-light);
 }
 
 .button-login {
   width: 92px;
-color:var(--color-size);
-font-family: "Arial Rounded MT Bold";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-background-color: var(--color-text-dark);
-height: 39px;
-flex-shrink: 0;
-border-radius: 10px;
+  color: var(--color-size);
+  font-family: "Arial Rounded MT Bold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  background-color: var(--color-text-dark);
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 10px;
 }
 
 .button-login-page {
-padding-top:30px;
+  padding-top: 30px;
 }
 
 .login {
   display: flex;
-  
 }
-
-
-
