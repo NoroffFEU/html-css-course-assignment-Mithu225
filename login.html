@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rainyday | Home</title>
+    <title>Rainyday | Login</title>
     <link rel="stylesheet" href="src/css/styles.css" />
     <script
       type="module"
@@ -37,24 +37,30 @@
           </li>
         </ul>
         <div class="menu-icon">
-          <ion-icon size="large" name="person-circle-outline"></ion-icon>
-          <ion-icon size="large" name="cart"></ion-icon>
+          <a href="login.html">
+            <ion-icon size="large" name="person-circle-outline"></ion-icon
+          ></a>
+          <a href="yourcart.html">
+            <ion-icon size="large" name="cart"></ion-icon
+          ></a>
         </div>
       </section>
       
     </header>
-    <div>
+    <div class="image-login">
         <img class="login-banner" src="assets/images/login.png" />
     </div>
 
+
     <div class="account-form">
+      <div class="form-info">
         <p class="login-title">MY ACCOUNT</p>
         <form>
         <div class="login-info">
             
             <div class="user-login">
               <br />
-              <label for="account">Username or  Email<br /><br /></label>
+              <label for="account">Username or Email<br /><br /></label>
               <input
                 class="acc-text-box"
                 type="text"
@@ -80,6 +86,7 @@
         <p class="cant-login">Can't log in?</p>
         <p class="reset">Reset password</p>
         </div>
+    </div>
     </div>
     <footer>
       <div class="footer-bar">

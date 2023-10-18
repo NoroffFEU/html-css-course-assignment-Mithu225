@@ -757,7 +757,7 @@ h3.product-detail-link {
 .sub-back-home {
   position: absolute;
   bottom: 10px;
-  left: 750px;
+  left: 1150px;
 }
 
 /* submission */
@@ -1021,7 +1021,7 @@ font-weight: 700;
 
 }
 
-.user-info ,.type-message, .phone-info {
+.user-info ,.type-message, .telephone-info {
   width: 220.57px;
 flex-shrink: 0;
 color:var(--color-text-gray);
@@ -1072,15 +1072,28 @@ cursor: pointer;
 
 /* login page */
 
-.login-banner {
-  width: 100%;
-  position: relative;
-}
 
+.image-login >img {
+  position: relative;
+  width: 100%;
+}
 .account-form {
   position: absolute;
-  top: 300px;
-  left: 150px;
+  top: 220px;
+  left: 5px;
+  
+  background-color:#ffffff27;
+  width: 800px;
+  height:927px;
+ 
+  
+}
+
+.form-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
 }
 .login-title {
   width: 173px;
@@ -1091,6 +1104,7 @@ font-family: "Arial";
 font-size: 25px;
 font-style: normal;
 font-weight: 700;
+
 }
 
 .user-login, .password-login , .cant-login, .reset{
@@ -1135,4 +1149,6 @@ padding-top:30px;
   display: flex;
   
 }
+
+
 
