@@ -1,0 +1,114 @@
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+  .men-womenbg {
+    flex-direction: row;
+    padding: 5rem;
+  }
+  .top-collection-detail {
+    font-size: 3rem;
+  }
+  .footer-link-store {
+    gap: 12.5rem;
+  }
+  .footer-bar {
+    gap: 18rem;
+  }
+  .footer-shop, .footer-help ,.footer-info {
+    font-size:2rem;
+  }
+  .top-collection{
+  font-size: 3rem;
+  }
+  .menu-bar-item {
+    font-size:2rem;
+  }
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .header-bar {
+    flex-direction: column;
+  }
+
+  .men-womenbg {
+    flex-direction: column;
+    padding: 3rem;
+  }
+  .menu-bar {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .menu-bar > li {
+    padding: 1.25rem 0;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .header-bar {
+    flex-direction: column;
+  }
+  .men-womenbg {
+    flex-direction: column;
+    padding: 3rem;
+  }
+  .menu-bar {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .menu-bar > li {
+    padding: 1.25rem 0;
+  }
+  .menu-icon {
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  .top-collection {
+    font-size:2rem;
+  }
+  .top-product-list {
+    flex-direction: column;
+    gap: 2rem;
+    padding:2rem;
+  }
+  .top-collection-1,
+.top-collection-2,
+.top-collection-3 {
+    padding-top:3rem;
+}
+  .top-collection-detail {
+    font-size: 1rem;
+  }
+  .box {
+    width: 100%;
+  }
+  .footer-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-right-subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-link-store {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-shop ,.footer-help,.footer-info {
+    font-size: 1.5rem;
+  }
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+}

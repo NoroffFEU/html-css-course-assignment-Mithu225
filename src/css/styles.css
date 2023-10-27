@@ -5,9 +5,12 @@
 @import url("./_variables.css");
 /* Feel free to add as many of these imports as you need */
 
+@import url("./_media-query.css");
+
 header {
   background-color: var(--color-text-light);
 }
+
 h2.season-header {
   background-color: #3d604e;
   height: 100px;
@@ -17,27 +20,27 @@ h2.season-header {
   justify-content: center;
 }
 
-section.header-bar {
-  height: 80px;
-}
-
 img.home-banner {
   width: 100%;
 }
 
 ul.menu-bar {
   display: flex;
-  gap: 60px;
   width: 100%;
   list-style: none;
   align-items: center;
   justify-content: center;
-  padding-right: 200px;
+  padding: 0.5rem 0;
+}
+
+ul.menu-bar > li {
+  width: 50%;
+  text-align: center;
 }
 
 div.menu-icon {
   display: flex;
-  padding-right: 100px;
+
   align-items: center;
   gap: 60px;
 }
@@ -45,7 +48,7 @@ div.menu-icon {
 .menu-bar-item {
   color: var(--color-text-gray);
   font-family: "Arial";
-  font-size: 18px;
+
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
@@ -55,37 +58,39 @@ div.menu-icon {
   font-weight: bold;
 }
 
-section.header-bar {
+.header-bar {
   display: flex;
-  padding-left: 100px;
+  padding: 1rem 3rem;
 }
 
-img.menbg {
-  padding-left: 100px;
-  padding-top: 100px;
-}
-
-img.womenbg {
-  padding-right: 100px;
-  padding-top: 100px;
-}
-
-section.men-womenbg {
+.men-womenbg {
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 80px;
 }
+.womenbg {
+  max-width: 100%;
+}
+
+.menbg {
+  max-width: 100%;
+}
 
 h1.top-collection {
-  padding-top: 50px;
   color: var(--color-text-dark);
   text-align: center;
   font-family: "Arial Rounded MT Bold";
-  font-size: 50px;
+
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.top-collection-1,
+.top-collection-2,
+.top-collection-3 {
+  max-width: 100%;
 }
 
 p.top-collection-detail {
@@ -94,22 +99,18 @@ p.top-collection-detail {
   color: var(--color-text-dark);
   text-align: center;
   font-family: "Arial";
-  font-size: 50px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 .box {
-  width: 382px;
   height: 643px;
   border: 1px solid black;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   border-radius: 20px;
   border: 1px solid #cdcdcd;
-  padding-top: 35px;
-  padding-left: 35px;
 }
 div.home-product1 {
   position: relative;
@@ -117,7 +118,7 @@ div.home-product1 {
 div.new-product-label {
   position: absolute;
   bottom: 535px;
-  right: 243px;
+  left: -2rem;
 }
 p.new-text-label {
   color: var(--color-text-light);
@@ -135,10 +136,17 @@ p.new-text-label {
 div.top-product-list {
   width: 100%;
   display: flex;
-  direction: column;
+
   justify-content: center;
-  gap: 240px;
+  gap: 3rem;
   padding-bottom: 100px;
+}
+
+.top-collection-1,
+.top-collection-2,
+.top-collection-3 {
+  max-width: 100%;
+  padding-top: rem;
 }
 
 div.collection-star-icon {
@@ -176,18 +184,15 @@ div.footer-bar {
   display: flex;
   width: 100%;
   background-color: var(--color-text-footer);
-  height: 535px;
-  gap: 300px;
+  padding: 2rem;
 }
 
 img.footer-logo {
-  padding-left: 130px;
   height: 172px;
 }
 
 p.footer-detail {
-  width: 600px;
-  padding-left: 130px;
+  width: 100%;
   color: var(--color-text-gray);
   font-family: "Arial";
   font-size: 25px;
@@ -199,14 +204,13 @@ p.footer-detail {
 
 div.footer-icon {
   display: flex;
-  padding-left: 120px;
+
   gap: 50px;
 }
 
 div.footer-right-subscribe {
   display: flex;
   gap: 10px;
-  padding: 30px;
 }
 
 .button-subscribe {
@@ -225,17 +229,16 @@ div.footer-right-subscribe {
 
 div.footer-link-store {
   display: flex;
-  padding-right: 100px;
-  gap: 200px;
 }
 
-p.footer-shop {
+.footer-shop,
+.footer-help,
+.footer-info {
   display: flex;
   color: var(--color-text-dark);
   font-family: "Arial";
-  font-size: 32px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   line-height: normal;
 }
 div.footer-shop-details a {
@@ -248,15 +251,6 @@ div.footer-shop-details a {
   text-decoration: none;
 }
 
-p.footer-help {
-  display: flex;
-  color: var(--color-text-dark);
-  font-family: "Arial";
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
 div.footer-help-details {
   color: var(--color-text-gray);
   font-family: "Arial";
@@ -264,15 +258,7 @@ div.footer-help-details {
   font-style: normal;
   font-weight: 400;
 }
-p.footer-info {
-  display: flex;
-  color: var(--color-text-dark);
-  font-family: "Arial";
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
+
 div.footer-info-details {
   color: var(--color-text-gray);
   font-family: "Arial";
@@ -583,7 +569,7 @@ h3.product-detail-link {
   height: 40px;
   flex-shrink: 0;
   border-radius: 10px;
-  border: 1px solid #d2d2d2;
+  border: 1px solid var(--color-border-light);
   background-color: var(--color-button-checkout);
 }
 
@@ -723,7 +709,7 @@ h3.product-detail-link {
   gap: 90px;
 }
 
-.button-back{
+.button-back {
   padding-bottom: 100px;
   margin-left: 800px;
 }
@@ -740,7 +726,6 @@ h3.product-detail-link {
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
-  
 }
 /* subscribe page */
 .image-thanks {
@@ -893,7 +878,7 @@ td {
   height: 39px;
   flex-shrink: 0;
   border-radius: 5px;
-  border: 1px solid #d2d2d2;
+  border: 1px solid var(--color-border-light);
   background-color: var(--color-text-light);
   color: var(--color-text-gray);
   font-family: "Arial Rounded MT Bold";
@@ -929,12 +914,11 @@ td {
 
 /* about */
 .about {
-   position: relative;
+  position: relative;
 }
 .about-banner {
   width: 100%;
   height: 500px;
- 
 }
 
 .about-slogan-row1 {

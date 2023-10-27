@@ -2,24 +2,20 @@
 /* This could be colors, fonts, or padding sizes! */
 
 :root {
-  
   --color-text-light: #ffffff;
   --color-text-dark: #000000;
-  --color-text-gray: #514D4D;
-  --color-text-footer:#E8EBE9;
-  --color-text-sub:#b30f00;
-  --color-icon-product: #FFA500;
-  --color-link-bar:#F0F1F3;
-  --color-size:#FFFBFB;
-  --color-size-xxl:#E6E0E0;
-  --color-button-checkout: #E1DBDB;
-  --color-checkout-items:#C6F5FF;
-  --color-sub-thanks:#B6ABA5;
-  --color-submission:#555252;
-  --color-slogan:#FCF7F7;
-  --color-button-send:#235E7B;
-  
-
-
-
+  --color-text-gray: #514d4d;
+  --color-text-footer: #e8ebe9;
+  --color-text-sub: #b30f00;
+  --color-icon-product: #ffa500;
+  --color-link-bar: #f0f1f3;
+  --color-size: #fffbfb;
+  --color-size-xxl: #e6e0e0;
+  --color-button-checkout: #e1dbdb;
+  --color-checkout-items: #c6f5ff;
+  --color-sub-thanks: #b6aba5;
+  --color-submission: #555252;
+  --color-slogan: #fcf7f7;
+  --color-button-send: #235e7b;
+  --color-border-light: #d2d2d2;
 }
