@@ -111,9 +111,12 @@ p.top-collection-detail {
   padding: 1rem;
   border-radius: 20px;
   border: 1px solid #cdcdcd;
+  position: relative;
 }
 div.home-product1 {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 div.new-product-label {
   position: absolute;
@@ -136,9 +139,9 @@ p.new-text-label {
 div.top-product-list {
   width: 100%;
   display: flex;
-
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
   padding-bottom: 100px;
 }
 
@@ -163,21 +166,11 @@ ion-icon.color3 {
 }
 
 div.product-list {
-  padding-bottom: 100px;
-}
-
-div.product-list-line1 {
-  display: flex;
   justify-content: center;
-  gap: 240px;
-  padding-top: 100px;
-}
-
-div.product-list-line2 {
   display: flex;
-  justify-content: center;
-  gap: 240px;
-  padding-top: 100px;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 2rem;
 }
 
 div.footer-bar {
@@ -324,18 +317,18 @@ h1.product-title {
   color: var(--color-text-gray);
   text-align: left;
   font-family: "Arial Rounded MT Bold";
-  font-size: 50px;
+
   font-style: normal;
   font-weight: 400;
-  padding-left: 100px;
 }
 
 /* product-detail */
 
 div.product-detail-bar {
   display: flex;
-  gap: 2500px;
-  padding-left: 50px;
+
+  padding: 0 3rem;
+  justify-content: space-between;
   background-color: var(--color-link-bar);
 }
 
@@ -349,14 +342,12 @@ h3.product-detail-link {
 }
 
 .box-product-detail-left {
-  width: 380px;
-  height: 500px;
+  max-width: 100%;
   border: 1px solid black;
   margin: 0;
   border-radius: 20px;
   border: 1px solid #cdcdcd;
-  padding-top: 35px;
-  padding-left: 35px;
+  padding: 0;
 }
 
 .product-detail {
@@ -366,9 +357,6 @@ h3.product-detail-link {
   padding-bottom: 100px;
 }
 
-.product-detail-right {
-  padding-left: 70px;
-}
 .collection-product-color {
   display: flex;
 }
@@ -400,8 +388,6 @@ h3.product-detail-link {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-left: 30px;
-  padding-right: 100px;
 }
 .find-size {
   color: var(--color-text-gray);
@@ -414,7 +400,6 @@ h3.product-detail-link {
 }
 .box-selection-size {
   display: flex;
-  gap: 20px;
 }
 
 .box-small-size {
@@ -472,7 +457,7 @@ h3.product-detail-link {
   font-weight: 400;
 }
 .text-description {
-  width: 700px;
+  max-width: 700px;
 }
 .button-cart {
   padding-top: 30px;
