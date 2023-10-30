@@ -24,16 +24,16 @@
         <img src="assets/images/Logo.jpg" />
         <ul class="menu-bar">
           <li>
-            <a class="menu-bar-item " href="index.html"
-              >HOME</a
-            >
+            <a class="menu-bar-item" href="index.html">HOME</a>
           </li>
           <li>
             <a class="menu-bar-item" href="product.html">PRODUCT</a>
           </li>
           <li><a class="menu-bar-item" href="about.html">ABOUT</a></li>
           <li>
-            <a class="menu-bar-item menu-bar-item--selected" href="contact.html">CONTACT</a>
+            <a class="menu-bar-item menu-bar-item--selected" href="contact.html"
+              >CONTACT</a
+            >
           </li>
         </ul>
         <div class="menu-icon">
@@ -47,44 +47,40 @@
       </section>
     </header>
     <div>
-        <img class="contact-banner" src="assets/images/Contact.jpg" />
+      <img class="contact-banner" src="assets/images/Contact.jpg" />
     </div>
     <div class="submission-form">
-        <p class="form-title">Send Message</p>
-        <form>
-        <div class="form-info">
-            
-            <div class="user-info">
-              <br />
-              <label for="email">Username or  Email<br /><br /></label>
-              <input
-                class="email-text-box"
-                type="text"
-                id="email"
-                name="email"
-              />
-            </div>
-            <div class="phone-info">
-              <br /><label for="phone">Phone<br /><br /></label>
-              <input
-                class="phone-text-box"
-                placeholder="1234567890"
-                id="phone"
-                name="phone"
-              />
-            </div>
+      <form class="contact-form-info">
+        <p class="text form-title">Send Message</p>
+        <div class="form-input-container-column contact-form">
+          <div class="form-input-item">
+            <label for="email">Username or Email</label>
+            <input type="text" id="email" name="email" />
           </div>
-            <div class="your message">
-                <p class="type-message">Type your message<br /><br /></p>
-                <textarea class="message-area" rows="10" cols="45" name="comment" form="userform"></textarea>
-            </div>
-            </form>
+          <div class="form-input-item">
+            <label for="phone">Phone</label>
+            <input placeholder="1234567890" id="phone" name="phone" />
+          </div>
+
+          <div class="form-input-item">
+            <label for="message">Type your message</label>
+            <textarea
+              rows="10"
+              cols="45"
+              name="comment"
+              form="userform"
+            ></textarea>
+          </div>
+
+          <div class="button-send-message">
+            <a href="submission.html"
+              ><button class="button button-primary">Send</button></a
+            >
+          </div>
+        </div>
+      </form>
     </div>
-     <div class="button-send-message">
-        <a href="submission.html"
-          ><button class="button-send">Send</button></a
-        >
-    </div>
+
     <footer>
       <div class="footer-bar">
         <div class="footer-left">
@@ -116,7 +112,7 @@
               </form>
             </div>
             <a href="subscribed.html"
-              ><button class="button-subscribe">SUBSCRIBE</button></a
+              ><button class="button button-error">SUBSCRIBE</button></a
             >
           </div>
           <div class="footer-link-store">
@@ -166,4 +162,4 @@
       </div>
     </footer>
   </body>
-  </html>
+</html>

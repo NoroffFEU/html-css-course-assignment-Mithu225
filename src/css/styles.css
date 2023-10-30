@@ -22,6 +22,7 @@ h2.season-header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
 }
 
 img.home-banner {
@@ -90,6 +91,34 @@ div.menu-icon {
   width: 100%;
   border-radius: 5px;
   border: none;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.form-input-container-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-input-item label {
+  display: block;
+  padding-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+.form-input-item input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #bbb6b6;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.form-input-item textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #bbb6b6;
   padding: 1rem;
   font-size: 1rem;
 }
@@ -882,6 +911,9 @@ h3.product-detail-link {
 /* your cart page */
 .your-cart {
   position: relative;
+  background-image: url("/assets/images/1600x800_Header_2_2048x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .your-cart-banner {
@@ -889,26 +921,25 @@ h3.product-detail-link {
   height: 1300px;
 }
 
+.your-cart-table {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
 .your-cart-title {
-  width: 302px;
-  height: 68px;
+  padding-top: 3rem;
   flex-shrink: 0;
   color: #666;
   text-align: center;
 
-  font-size: 65px;
+  
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   z-index: 1;
-  position: absolute;
-  top: 300px;
-  left: 1300px;
 }
 table {
-  position: absolute;
-  top: 230px;
-  left: 1100px;
   width: 777px;
   height: 280px;
   flex-shrink: 0;
@@ -962,11 +993,10 @@ td {
 }
 
 .button-back-checkout {
-  position: absolute;
-  bottom: 650px;
-  left: 1300px;
   display: flex;
   gap: 50px;
+  justify-content: center;
+  padding: 1rem;
 }
 
 /* about */
@@ -1001,32 +1031,36 @@ td {
 }
 .story-top {
   display: flex;
-  gap: 400px;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 3rem;
 }
 
 .about-title {
   color: var(--color-text-dark);
   font-family: "Arial Rounded MT Bold";
-
+  padding-left: 2rem;
   font-style: normal;
   font-weight: 400;
 }
 
 .text-story1 {
-  width: 1300px;
-  height: 574px;
   flex-shrink: 0;
   color: var(--color-text-dark);
   text-align: justify;
-  font-family: "Inter";
-  font-size: 40px;
   font-style: normal;
   font-weight: 400;
   float: left;
 }
 
-.image-story1 {
+.image-story2 {
   float: left;
+  max-width: 100%;
+}
+
+.image-story1 {
+  float: right;
+  max-width: 100%;
 }
 
 .story-bottom {
@@ -1035,76 +1069,27 @@ td {
   padding-bottom: 100px;
 }
 .text-story2 {
-  width: 607px;
-  height: 476px;
   flex-shrink: 0;
   color: var(--color-text-dark);
   text-align: justify;
-  font-family: "Inter";
-  font-size: 36px;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
-  padding-right: 50px;
-}
-
-.image-story2 {
-  float: left;
-  padding-left: 200px;
-  width: 1300px;
 }
 
 /* contact page */
 .contact-banner {
   width: 100%;
-  height: 1100px;
+}
+.submission-form {
+  padding: 2rem;
 }
 
 .form-title {
   color: var(--color-text-dark);
-
-  font-size: 50px;
   font-style: normal;
   font-weight: 700;
-}
-
-.user-info,
-.type-message,
-.telephone-info {
-  width: 220.57px;
-  flex-shrink: 0;
-  color: var(--color-text-gray);
-
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.username-text-box,
-.telephone-text-box {
-  width: 411px;
-  height: 41px;
-  flex-shrink: 0;
-  border-radius: 5px;
-  border: 1px solid #bbb6b6;
-  background-color: var(--color-text-light);
-}
-
-.message-area {
-  width: 411px;
-  height: 148px;
-  flex-shrink: 0;
-  border-radius: 5px;
-  border: 1px solid #bbb6b6;
-  background: var(--color-text-light);
-}
-
-.submission-form,
-.button-send-message {
-  padding-left: 120px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 1rem 0;
 }
 
 .button-send {
@@ -1122,41 +1107,46 @@ td {
 }
 
 /* login page */
-
+.login-form label {
+  color: var(--color-border-light);
+  font-size: 1.5rem;
+}
 .login {
   position: relative;
+  display: flex;
+  min-height: 30rem;
 }
+
+.login-bottom {
+  display: flex;
+}
+
 .login-banner {
   width: 100%;
 }
 .account-form {
   position: absolute;
-  top: 0px;
-  left: 5px;
+  top: 0;
+  left: 0;
   background-color: #ffffff27;
-  width: 1000px;
-  height: 1065px;
+  height: 100%;
 }
 
 .form-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 200px;
+  padding: 3rem;
 }
+
 .login-title {
-  width: 173px;
-  height: 24px;
   flex-shrink: 0;
   color: var(--color-text-light);
-
+  padding-bottom: 1rem;
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
 }
 
-.user-login,
-.password-login,
 .cant-login,
 .reset {
   width: 180px;
@@ -1169,33 +1159,6 @@ td {
   line-height: normal;
 }
 
-.acc-text-box,
-.pw-text-box {
-  width: 300px;
-  height: 41px;
-  flex-shrink: 0;
-  border-radius: 5px;
-  border: 1px solid #bbb6b6;
-  background-color: var(--color-text-light);
-}
-
-.button-login {
-  width: 92px;
-  color: var(--color-size);
-  font-family: "Arial Rounded MT Bold";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  background-color: var(--color-text-dark);
-  height: 39px;
-  flex-shrink: 0;
-  border-radius: 10px;
-}
-
 .button-login-page {
   padding-top: 30px;
-}
-
-.login {
-  display: flex;
 }

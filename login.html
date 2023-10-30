@@ -51,37 +51,27 @@
 
       <div class="account-form">
         <div class="form-info">
-          <p class="login-title">MY ACCOUNT</p>
+          <p class="text login-title">MY ACCOUNT</p>
           <form>
-            <div class="login-info">
-              <div class="user-login">
-                <br />
-                <label for="account">Username or Email<br /><br /></label>
-                <input
-                  class="acc-text-box"
-                  type="text"
-                  id="account"
-                  name="account"
-                />
+            <div class="form-input-container-column login-form">
+              <div class="form-input-item">
+                <label for="account">Username or Email</label>
+                <input type="text" id="account" name="account" />
               </div>
-              <div class="password-login">
-                <br /><label for="pass">Password<br /><br /></label>
-                <input
-                  class="pw-text-box"
-                  type="password"
-                  id="pass"
-                  name="pass"
-                />
+              <div class="form-input-item">
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass" />
               </div>
-            </div>
-            <div class="button-login-page">
-              <a href="home.html"
-                ><button class="button-login">Log in</button></a
-              >
-            </div>
-            <div class="login">
-              <p class="cant-login">Can't log in?</p>
-              <p class="reset">Reset password</p>
+
+              <div class="button-login-page">
+                <a href="home.html"
+                  ><button class="button button-dark">Log in</button></a
+                >
+              </div>
+              <div class="login-bottom">
+                <p class="cant-login">Can't log in?</p>
+                <p class="reset">Reset password</p>
+              </div>
             </div>
           </form>
         </div>
@@ -118,7 +108,7 @@
               </form>
             </div>
             <a href="subscribed.html"
-              ><button class="button-subscribe">SUBSCRIBE</button></a
+              ><button class="button button-error">SUBSCRIBE</button></a
             >
           </div>
           <div class="footer-link-store">
