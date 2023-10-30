@@ -7,6 +7,10 @@
 
 @import url("./_media-query.css");
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
   background-color: var(--color-text-light);
 }
@@ -45,9 +49,63 @@ div.menu-icon {
   gap: 60px;
 }
 
+.button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.button-error {
+  background-color: var(--color-error);
+  color: white;
+}
+
+.button-warning {
+  background-color: var(--color-warning);
+  color: white;
+}
+
+.button-dark {
+  background-color: var(--color-dark);
+  color: white;
+}
+
+.breadcrumb {
+  display: flex;
+  background-color: var(--color-link-bar);
+  gap: 1rem;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+}
+
+.form-input {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.email-subscribe {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.text {
+  margin: 0;
+  color: var(--color-dark);
+}
+
 .menu-bar-item {
   color: var(--color-text-gray);
-  font-family: "Arial";
 
   font-style: normal;
   font-weight: 400;
@@ -94,18 +152,14 @@ h1.top-collection {
 }
 
 p.top-collection-detail {
-  padding-left: 72px;
-  padding-right: 72px;
   color: var(--color-text-dark);
   text-align: center;
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 .box {
-  height: 643px;
   border: 1px solid black;
   margin: 0;
   padding: 1rem;
@@ -113,11 +167,13 @@ p.top-collection-detail {
   border: 1px solid #cdcdcd;
   position: relative;
 }
+
 div.home-product1 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 div.new-product-label {
   position: absolute;
   bottom: 535px;
@@ -185,14 +241,14 @@ img.footer-logo {
 }
 
 p.footer-detail {
-  width: 100%;
   color: var(--color-text-gray);
-  font-family: "Arial";
-  font-size: 25px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 60px;
   justify-content: left;
+
+  max-width: 31rem;
+  line-height: 2rem;
 }
 
 div.footer-icon {
@@ -229,15 +285,13 @@ div.footer-link-store {
 .footer-info {
   display: flex;
   color: var(--color-text-dark);
-  font-family: "Arial";
   font-style: normal;
   font-weight: bold;
   line-height: normal;
 }
 div.footer-shop-details a {
   color: var(--color-text-gray);
-  font-family: "Arial";
-  font-size: 25px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
 
@@ -246,16 +300,14 @@ div.footer-shop-details a {
 
 div.footer-help-details {
   color: var(--color-text-gray);
-  font-family: "Arial";
-  font-size: 25px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
 }
 
 div.footer-info-details {
   color: var(--color-text-gray);
-  font-family: "Arial";
-  font-size: 25px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   display: flex;
@@ -287,18 +339,9 @@ p.footer-fax-text {
   color: var(--color-text-gray);
 }
 
-.form-input {
-  border-radius: 10px;
-  border: var(--color-text-gray);
-  text-align: center;
-  width: 240px;
-  height: 40px;
-}
-
 /*product page*/
 p.product-name {
   color: var(--color-text-dark);
-  font-family: "Arial";
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -306,7 +349,6 @@ p.product-name {
 
 p.product-price {
   color: var(--color-text-dark);
-  font-family: "Arial";
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -323,14 +365,6 @@ h1.product-title {
 }
 
 /* product-detail */
-
-div.product-detail-bar {
-  display: flex;
-
-  padding: 0 3rem;
-  justify-content: space-between;
-  background-color: var(--color-link-bar);
-}
 
 h3.product-link,
 h3.product-detail-link {
@@ -365,7 +399,6 @@ h3.product-detail-link {
 }
 .product-text-detail {
   color: var(--color-text-dark);
-  font-family: "Arial";
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -374,7 +407,6 @@ h3.product-detail-link {
 .text-color,
 .text-detail {
   color: var(--color-text-dark);
-  font-family: "Arial";
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -383,7 +415,7 @@ h3.product-detail-link {
 
 .select-size {
   color: var(--color-text-sub);
-  font-family: "Arial";
+
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -391,7 +423,7 @@ h3.product-detail-link {
 }
 .find-size {
   color: var(--color-text-gray);
-  font-family: "Arial";
+
   font-size: 25px;
   font-style: italic;
   font-weight: 400;
@@ -423,6 +455,43 @@ h3.product-detail-link {
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  background: #eaeaea;
+  border-radius: 10px;
+  padding: 1rem 0.4rem;
+}
+
+.quantity-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0px 8px;
+  cursor: pointer;
+}
+
+.quantity-input {
+  outline: none;
+  user-select: none;
+  text-align: center;
+  width: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
+.quantity-input::-webkit-inner-spin-button,
+.quantity-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .button-add-to-cart {
@@ -461,6 +530,8 @@ h3.product-detail-link {
 }
 .button-cart {
   padding-top: 30px;
+  gap: 1rem;
+  display: flex;
 }
 
 .quantity-product {
@@ -469,6 +540,9 @@ h3.product-detail-link {
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 /* checkout page */
@@ -480,19 +554,17 @@ h3.product-detail-link {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding-left: 50px;
 }
 .text-name-info,
 .phone-email-info {
   display: flex;
   gap: 140px;
   color: var(--color-text-gray);
-  font-family: "Arial";
+
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-left: 50px;
 }
 
 .address-info,
@@ -503,52 +575,68 @@ h3.product-detail-link {
 .expired,
 .cvc-number {
   color: var(--color-text-gray);
-  font-family: "Arial";
+
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-left: 50px;
 }
 
-.fname-text-box,
-.lname-text-box,
-.phone-text-box,
-.email-text-box,
-.card-text-box,
-.name-card-text-box {
-  width: 400px;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid #bbb6b6;
-}
-
-.expired-date-cvc {
+.checkout-form {
   display: flex;
-  gap: 50px;
-}
-.cvc-text-box,
-.expired-text-box {
-  width: 100px;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid #bbb6b6;
-  text-align: center;
-}
-.address-text-box,
-.country-text-box,
-.postal-text-box {
-  width: 500px;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid #bbb6b6;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.button-shopping-purchase {
-  padding: 50px;
+.checkout-content {
+  width: 100%;
   display: flex;
-  gap: 50px;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
+
+.checkout-purchase {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.checkout-form label {
+  display: block;
+  padding-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+.checkout-form-item input,
+.checkout-content input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #bbb6b6;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.checkout-info {
+  padding: 2rem;
+}
+.checkout-right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-expired-date {
+  width: 70%;
+}
+
+.checkout-cvc {
+  width: calc(30% - 2rem);
+}
+
+.checkout-success-icon {
+  font-size: 4rem;
+  color: green;
+}
+
 .con-shopping {
   width: 211px;
   height: 40px;
@@ -568,38 +656,27 @@ h3.product-detail-link {
   color: var(--color-text-light);
 }
 
-.checkout-detail-bar {
-  display: flex;
-  gap: 2000px;
-  padding-left: 50px;
-  background-color: var(--color-link-bar);
-}
-.checkout-info {
-  display: flex;
-  gap: 400px;
-  padding-left: 100px;
-}
-.checkout-right-side {
-  display: flex;
-  flex-direction: column;
-}
 .img-card {
+  width: 100%;
   display: flex;
-  gap: 30px;
-  padding: 50px;
+  justify-content: space-around;
+}
+
+.img-card img {
+  max-width: 100%;
 }
 
 /* checkout success page */
 
 .checkout-success {
   text-align: center;
-  padding-top: 100px;
+  padding: 2rem;
 }
 .thanks-text,
 .checkout-message {
   color: var(--color-text-gray);
-  font-family: "Arial";
-  font-size: 40px;
+
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -607,8 +684,8 @@ h3.product-detail-link {
 
 .order-info {
   display: flex;
-  gap: 450px;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding: 2rem;
 }
 
 .order-info-left {
@@ -622,8 +699,8 @@ h3.product-detail-link {
   display: flex;
   gap: 10px;
   color: var(--color-text-gray);
-  font-family: "Arial";
-  font-size: 30px;
+
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -632,62 +709,57 @@ h3.product-detail-link {
 .IDnumber,
 .date-number {
   color: #1d4aa5;
-  font-family: "Arial";
-  font-size: 30px;
+
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.order-info-right {
-  width: 120px;
-  text-align: right;
-}
-.delivery-info {
+
+.delivery-info,
+.address-ship {
   color: var(--color-text-gray);
-  text-align: right;
-  font-family: "Arial";
-  font-size: 30px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
+
 .items-info {
   display: flex;
   background-color: var(--color-checkout-items);
-  width: 1298px;
-  height: 160px;
   color: var(--color-text-gray);
-  font-family: "Arial";
-  font-size: 25px;
+
+  font-size: 1.5;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin: 0 auto;
-  justify-content: center;
-  gap: 300px;
+  justify-content: space-between;
+  padding: 2rem;
 }
 
 .checkout-info-left > img {
   padding: 20px;
 }
-.checkout-info-center {
-  padding-bottom: 30px;
-}
+
 .checkout-info-right {
   text-align: right;
 }
 .shipping,
 .total {
   display: flex;
-  gap: 50px;
+  gap: 2rem;
   justify-content: center;
   color: var(--color-text-dark);
   font-family: Arial;
-  font-size: 30px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-left: 700px;
+  padding: 0 2rem;
+  text-align: right;
+  justify-content: flex-end;
 }
 
 .total {
@@ -695,8 +767,8 @@ h3.product-detail-link {
 }
 
 .button-back {
-  padding-bottom: 100px;
-  margin-left: 800px;
+  padding: 1rem;
+  text-align: right;
 }
 .button-back-home {
   width: 211px;
@@ -706,7 +778,7 @@ h3.product-detail-link {
   background: var(--color-text-sub);
   color: var(--color-text-light);
   font-family: "Inter";
-  font-size: 15px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -759,7 +831,7 @@ h3.product-detail-link {
 .mess-submission {
   color: var(--color-submission);
   text-align: center;
-  font-family: "Arial";
+
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -791,7 +863,7 @@ h3.product-detail-link {
 .button-back-view-cart {
   display: flex;
   gap: 50px;
-  font-family: "Arial";
+
   position: absolute;
   top: 800px;
   left: 1150px;
@@ -823,7 +895,7 @@ h3.product-detail-link {
   flex-shrink: 0;
   color: #666;
   text-align: center;
-  font-family: "Arial";
+
   font-size: 65px;
   font-style: normal;
   font-weight: 700;
@@ -903,37 +975,29 @@ td {
 }
 .about-banner {
   width: 100%;
-  height: 500px;
 }
 
+.slogan {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  text-align: center;
+}
 .about-slogan-row1 {
-  width: 137px;
-  height: 140px;
   flex-direction: column;
   flex-shrink: 0;
   color: var(--color-slogan);
-  text-align: center;
-  font-family: "Arial";
-  font-size: 40px;
+
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  position: absolute;
-  top: 80px;
-  left: 1000px;
 }
 
 .about-slogan-row2 {
   color: var(--color-slogan);
-  text-align: center;
   font-family: "Arial Rounded MT Bold";
-  font-size: 60px;
+
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  position: absolute;
-  top: 200px;
-  left: 950px;
 }
 .story-top {
   display: flex;
@@ -943,10 +1007,9 @@ td {
 .about-title {
   color: var(--color-text-dark);
   font-family: "Arial Rounded MT Bold";
-  font-size: 60px;
+
   font-style: normal;
   font-weight: 400;
-  padding-left: 200px;
 }
 
 .text-story1 {
@@ -960,8 +1023,6 @@ td {
   font-style: normal;
   font-weight: 400;
   float: left;
-  padding-left: 200px;
-  padding-bottom: 300px;
 }
 
 .image-story1 {
@@ -1001,7 +1062,7 @@ td {
 
 .form-title {
   color: var(--color-text-dark);
-  font-family: "Arial";
+
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
@@ -1013,7 +1074,7 @@ td {
   width: 220.57px;
   flex-shrink: 0;
   color: var(--color-text-gray);
-  font-family: "Arial";
+
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1048,7 +1109,7 @@ td {
 
 .button-send {
   color: var(--color-text-light);
-  font-family: "Arial";
+
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -1088,7 +1149,7 @@ td {
   height: 24px;
   flex-shrink: 0;
   color: var(--color-text-light);
-  font-family: "Arial";
+
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
@@ -1101,7 +1162,7 @@ td {
   width: 180px;
   flex-shrink: 0;
   color: var(--color-text-light);
-  font-family: "Arial";
+
   font-size: 20px;
   font-style: normal;
   font-weight: 400;

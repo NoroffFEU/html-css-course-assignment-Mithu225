@@ -2,6 +2,12 @@
 /* This could be colors, fonts, or padding sizes! */
 
 :root {
+  --color-primary: #235e7b;
+  --color-error: #b30f00;
+  --color-warning: #ffa500;
+  --color-dark: #212529;
+
+  --color-btn-primary: #235e7b;
   --color-text-light: #ffffff;
   --color-text-dark: #000000;
   --color-text-gray: #514d4d;
