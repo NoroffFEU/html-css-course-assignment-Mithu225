@@ -50,6 +50,10 @@ div.menu-icon {
   gap: 60px;
 }
 
+div.menu-icon a {
+  color: var(--color-dark);
+}
+
 .button {
   padding: 1rem 2rem;
   font-size: 1rem;
@@ -386,9 +390,7 @@ p.product-price {
 
 h1.product-title {
   color: var(--color-text-gray);
-  text-align: left;
   font-family: "Arial Rounded MT Bold";
-
   font-style: normal;
   font-weight: 400;
 }
@@ -814,69 +816,73 @@ h3.product-detail-link {
   cursor: pointer;
 }
 /* subscribe page */
-.image-thanks {
+.subscribe-success {
   background-image: url(/assets/images/Subscribed.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position-x: left;
+  background-position-y: center;
 }
 
-.thank-banner {
-  width: 100%;
-  height: 1280px;
+.subscribe-body {
+  background: #84a29e45;
+  padding: 4rem;
+  border-radius: 1rem;
 }
 .message-subscribe {
   color: var(--color-sub-thanks);
   text-align: center;
-  font-family: Arial;
- 
+  font-family: "Arial";
+
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  
 }
-
+.sub-back-home {
+  text-align: center;
+}
 
 /* submission */
 .submission {
-  position: relative;
   background-image: url(/assets/images/Submission.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position-x: left;
+  background-position-y: center;
 }
-.submission-banner {
-  width: 100%;
-  height: 1300px;
+
+.submission-body {
+  background: #84a29eb3;
+  padding: 3rem;
+  border-radius: 1rem;
 }
+
 .mess-thank {
-  color: var(--color-submission);
-  font-family: "Aref Ruqaa";
-  
+  color: var(--color-text-light);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-align: center;
 }
 .mess-submission {
-  color: var(--color-submission);
+  color: var(--color-text-light);
   text-align: center;
 
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  
 }
-
-
-
+.submission-button-back-home {
+  text-align: center;
+}
 /* add to cart */
 .add-cart {
   background-image: url("/assets/images/add-to-cart.png");
@@ -887,6 +893,13 @@ h3.product-detail-link {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-position-x: left;
+  background-position-y: center;
+}
+.addcart-body {
+  background: #4a515021;
+  padding: 3rem;
+  border-radius: 1rem;
 }
 .addcart-title {
   color: var(--color-text-submission);
@@ -896,10 +909,7 @@ h3.product-detail-link {
   font-weight: 400;
   line-height: normal;
 }
-.cart-banner {
-  width: 100%;
-  height: 1200px;
-}
+
 .button-back-view-cart {
   display: flex;
   justify-content: center;
