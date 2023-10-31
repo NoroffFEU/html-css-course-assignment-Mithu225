@@ -112,6 +112,9 @@
   .checkout-container-right {
     width: 100%;
   }
+  .checkout-purchase {
+    flex-direction: column;
+  }
 
   .order-info {
     flex-direction: column;
@@ -156,5 +159,40 @@
   }
   .your-cart-title {
     font-size: 2rem;
+  }
+  .add-cart {
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+  }
+  .addcart-title {
+    font-size: 1.5rem;
+    padding-top:10rem;
+  }
+  .button-back-checkout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .button-back-view-cart {
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    
+  }
+  .submission {
+    height: 20rem;
+  }
+.mess-submission {
+  font-size: 1.5rem;
+}
+.mess-thank {
+    font-size: 1.5rem;
+  }
+.image-thanks{
+  height: 30rem;
+}
+  .message-subscribe {
+    font-size: 1.5rem;
   }
 }

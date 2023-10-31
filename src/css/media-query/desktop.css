@@ -92,4 +92,40 @@
   .your-cart-title {
     font-size: 4rem;
   }
+  .your-cart {
+    max-width: 100%;
+    padding:4rem;
+  }
+  .button-back-checkout {
+  display: flex;
+  gap: 3rem;
+  }
+  .add-cart {
+    height: 1000px;
+  
+  }
+   .addcart-title {
+    font-size: 2rem;;
+  }
+  .button-back-view-cart {
+    display: flex;
+    gap:3rem;
+  }
+  .submission {
+    height: 1000px;
+    padding-left: 20rem;
+  }
+  .mess-thank {
+    font-size: 3rem;
+  }
+  .mess-submission {
+    font-size: 3rem;
+  }
+  .image-thanks {
+    height: 1000px;
+  }
+  .message-subscribe {
+padding-left: 15rem;
+font-size: 3rem;
+  }
 }

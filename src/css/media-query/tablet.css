@@ -112,4 +112,20 @@
   .your-cart-title {
     font-size: 3rem;
   }
+   .submission {
+    height: 20rem;
+  }
+.mess-submission {
+  font-size: 1.5rem;
+}
+.mess-thank {
+    font-size: 1.5rem;
+  }
+.image-thanks{
+  height: 30rem;
+}
+  .message-subscribe {
+    font-size: 1.5rem;
+    
+  }
 }
