@@ -15,7 +15,7 @@ header {
   background-color: var(--color-text-light);
 }
 
-h2.season-header {
+.season-header {
   background-color: #3d604e;
   height: 100px;
   color: var(--color-text-light);
@@ -25,11 +25,11 @@ h2.season-header {
   margin: 0;
 }
 
-img.home-banner {
+.home-banner {
   width: 100%;
 }
 
-ul.menu-bar {
+.menu-bar {
   display: flex;
   width: 100%;
   list-style: none;
@@ -38,19 +38,19 @@ ul.menu-bar {
   padding: 0.5rem 0;
 }
 
-ul.menu-bar > li {
+.menu-bar > li {
   width: 50%;
   text-align: center;
 }
 
-div.menu-icon {
+.menu-icon {
   display: flex;
 
   align-items: center;
   gap: 60px;
 }
 
-div.menu-icon a {
+.menu-icon a {
   color: var(--color-dark);
 }
 
