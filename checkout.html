@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Checkout process"
+    <meta name="description" content="Checkout process" />
     <title>Rainyday | Checkout</title>
     <link rel="stylesheet" href="src/css/styles.css" />
     <script
@@ -18,11 +18,11 @@
   <body>
     <header>
       <div>
-        <h2 class="season-header">Season Sale - Up to 70% Off</h2>
+        <h1 class="season-header">Season Sale - Up to 70% Off</h1>
       </div>
 
       <section class="header-bar">
-        <img src="assets/images/Logo.jpg" />
+        <img src="assets/images/Logo.jpg" alt="Rainyday logo" />
         <ul class="menu-bar">
           <li>
             <a class="menu-bar-item" href="index.html">HOME</a>
@@ -38,10 +38,10 @@
           </li>
         </ul>
         <div class="menu-icon">
-          <a href="login.html">
+          <a href="login.html" aria-label="login">
             <ion-icon size="large" name="person-circle-outline"></ion-icon
           ></a>
-          <a href="yourcart.html">
+          <a href="yourcart.html" aria-label="your cart">
             <ion-icon size="large" name="cart"></ion-icon
           ></a>
         </div>
@@ -53,7 +53,7 @@
     <div class="checkout-info">
       <form class="checkout-form">
         <div class="checkout-container-left">
-          <h1 class="billing">Billing Details</h1>
+          <h2 class="billing">Billing Details</h2>
           <div class="checkout-content">
             <div class="checkout-form-item">
               <label for="fname">First name</label>
@@ -101,8 +101,8 @@
           <p class="payment">Payment Method</p>
           <div class="checkout-content">
             <div class="img-card">
-              <img src="assets/images/Payment-visa.jpg" />
-              <img src="assets/images/Payment-master.jpg" />
+              <img src="assets/images/Payment-visa.jpg" alt="Visa card" />
+              <img src="assets/images/Payment-master.jpg" alt="Master card" />
             </div>
 
             <div class="checkout-content">
@@ -147,7 +147,11 @@
     <footer>
       <div class="footer-bar">
         <div class="footer-left">
-          <img class="footer-logo" src="assets/images/Logo.jpg" />
+          <img
+            class="footer-logo"
+            src="assets/images/Logo.jpg"
+            alt="Rainyday logo"
+          />
           <div>
             <p class="footer-detail">
               Lorem ipsum dolor sit amet consectetur. Amet sed nulla nibh ac sit
@@ -167,6 +171,7 @@
             <div class="email-subscribe">
               <form action="/login" class="footer-subscribe">
                 <input
+                aria-label="email"
                   type="email"
                   id="email"
                   class="form-input"

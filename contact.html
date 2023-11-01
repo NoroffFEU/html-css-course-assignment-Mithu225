@@ -21,11 +21,11 @@
   <body>
     <header>
       <div>
-        <h2 class="season-header">Season Sale - Up to 70% Off</h2>
+        <h1 class="season-header">Season Sale - Up to 70% Off</h1>
       </div>
 
       <section class="header-bar">
-        <img src="assets/images/Logo.jpg" />
+        <img src="assets/images/Logo.jpg" alt="Rainyday logo" />
         <ul class="menu-bar">
           <li>
             <a class="menu-bar-item" href="index.html">HOME</a>
@@ -41,21 +41,25 @@
           </li>
         </ul>
         <div class="menu-icon">
-          <a href="login.html">
+          <a href="login.html" aria-label="login">
             <ion-icon size="large" name="person-circle-outline"></ion-icon
           ></a>
-          <a href="yourcart.html">
+          <a href="yourcart.html" aria-label="your cart">
             <ion-icon size="large" name="cart"></ion-icon
           ></a>
         </div>
       </section>
     </header>
     <div>
-      <img class="contact-banner" src="assets/images/Contact.jpg" />
+      <img
+        class="contact-banner"
+        src="assets/images/Contact.jpg"
+        alt="Contact information"
+      />
     </div>
     <div class="submission-form">
       <form class="contact-form-info">
-        <h1 class="text form-title">Send Message</h1>
+        <h2 class="text form-title">Send Message</h2>
         <div class="form-input-container-column contact-form">
           <div class="form-input-item">
             <label for="email">Username or Email</label>
@@ -69,6 +73,7 @@
           <div class="form-input-item">
             <label for="message">Type your message</label>
             <textarea
+             aria-label="message" 
               rows="10"
               cols="45"
               name="comment"
@@ -90,7 +95,11 @@
     <footer>
       <div class="footer-bar">
         <div class="footer-left">
-          <img class="footer-logo" src="assets/images/Logo.jpg" />
+          <img
+            class="footer-logo"
+            src="assets/images/Logo.jpg"
+            alt="Rainyday logo"
+          />
           <div>
             <p class="footer-detail">
               Lorem ipsum dolor sit amet consectetur. Amet sed nulla nibh ac sit
@@ -110,6 +119,7 @@
             <div class="email-subscribe">
               <form action="/login" class="footer-subscribe">
                 <input
+                  aria-label="email"
                   type="email"
                   id="email"
                   class="form-input"

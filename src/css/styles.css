@@ -128,7 +128,7 @@ header {
 }
 
 .email-subscribe {
-  width: 100%;
+ 
   padding-bottom: 1rem;
 }
 
@@ -209,7 +209,7 @@ div.home-product1 {
 
 div.new-product-label {
   position: absolute;
-  bottom: 535px;
+  top:0;
   left: -2rem;
 }
 p.new-text-label {
@@ -482,7 +482,7 @@ h3.product-detail-link {
   background-color: var(--color-size-xxl);
   text-align: center;
   padding: 20px;
-  font-family: Arial;
+  font-family: "Arial";
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -1125,7 +1125,7 @@ td {
 .login {
   position: relative;
   display: flex;
-  min-height: 30rem;
+  
 }
 
 .login-bottom {
@@ -1141,12 +1141,13 @@ td {
   left: 0;
   background-color: #ffffff27;
   height: 100%;
+  padding:3rem;
 }
 
 .form-info {
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  
 }
 
 .login-title {

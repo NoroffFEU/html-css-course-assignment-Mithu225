@@ -18,11 +18,11 @@
   <body>
     <header>
       <div>
-        <h2 class="season-header">Season Sale - Up to 70% Off</h2>
+        <h1 class="season-header">Season Sale - Up to 70% Off</h1>
       </div>
 
       <section class="header-bar">
-        <img src="assets/images/Logo.jpg" />
+        <img src="assets/images/Logo.jpg" alt="Rainyday logo" />
         <ul class="menu-bar">
           <li>
             <a class="menu-bar-item menu-bar-item--selected" href="index.html"
@@ -38,10 +38,10 @@
           </li>
         </ul>
         <div class="menu-icon">
-          <a href="login.html">
+          <a href="login.html" aria-label="login">
             <ion-icon size="large" name="person-circle-outline"></ion-icon
           ></a>
-          <a href="yourcart.html">
+          <a href="yourcart.html" aria-label="your cart">
             <ion-icon size="large" name="cart"></ion-icon
           ></a>
         </div>
@@ -49,7 +49,7 @@
     </header>
     <div class="add-cart">
       <div class="addcart-body">
-        <h1 class="text addcart-title">Your item is added to cart</h1>
+        <h2 class="text addcart-title">Your item is added to cart</h2>
         <div class="button-back-view-cart">
           <a href="index.html"
             ><button class="button button-error">CONTINUE SHOPPING</button></a
@@ -63,7 +63,11 @@
     <footer>
       <div class="footer-bar">
         <div class="footer-left">
-          <img class="footer-logo" src="assets/images/Logo.jpg" />
+          <img
+            class="footer-logo"
+            src="assets/images/Logo.jpg"
+            alt="Rainyday logo"
+          />
           <div>
             <p class="footer-detail">
               Lorem ipsum dolor sit amet consectetur. Amet sed nulla nibh ac sit
@@ -83,6 +87,7 @@
             <div class="email-subscribe">
               <form action="/login" class="footer-subscribe">
                 <input
+                aria-label="email"
                   type="email"
                   id="email"
                   class="form-input"

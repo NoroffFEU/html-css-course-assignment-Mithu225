@@ -19,11 +19,11 @@
   <body>
     <header>
       <div>
-        <h2 class="season-header">Season Sale - Up to 70% Off</h2>
+        <h1 class="season-header">Season Sale - Up to 70% Off</h1>
       </div>
 
       <section class="header-bar">
-        <img src="assets/images/Logo.jpg" />
+        <img src="assets/images/Logo.jpg" alt="Rainyday logo" />
         <ul class="menu-bar">
           <li>
             <a class="menu-bar-item" href="index.html">HOME</a>
@@ -39,10 +39,10 @@
           </li>
         </ul>
         <div class="menu-icon">
-          <a href="login.html">
+          <a href="login.html" aria-label="login">
             <ion-icon size="large" name="person-circle-outline"></ion-icon
           ></a>
-          <a href="yourcart.html">
+          <a href="yourcart.html" aria-label="your cart">
             <ion-icon size="large" name="cart"></ion-icon
           ></a>
         </div>
@@ -50,7 +50,7 @@
     </header>
 
     <div class="your-cart">
-      <h1 class="your-cart-title">Your Cart</h1>
+      <h2 class="your-cart-title">Your Cart</h2>
       <div class="your-cart-table">
         <table>
           <tr class="cart-info-column">
@@ -64,7 +64,12 @@
             <td>
               <ion-icon class="bin" size="large" name="trash-bin"></ion-icon>
             </td>
-            <td><img src="assets/images/selection-product.jpg" /></td>
+            <td>
+              <img
+                src="assets/images/selection-product.jpg" alt="Selected product in your cart"
+                alt="Selected product"
+              />
+            </td>
             <td>$250</td>
             <td>1</td>
             <td>$250</td>
@@ -83,7 +88,11 @@
     <footer>
       <div class="footer-bar">
         <div class="footer-left">
-          <img class="footer-logo" src="assets/images/Logo.jpg" />
+          <img
+            class="footer-logo"
+            src="assets/images/Logo.jpg" alt="Rainyday logo"
+            
+          />
           <div>
             <p class="footer-detail">
               Lorem ipsum dolor sit amet consectetur. Amet sed nulla nibh ac sit
@@ -103,6 +112,7 @@
             <div class="email-subscribe">
               <form action="/login" class="footer-subscribe">
                 <input
+                  aria-label="email"
                   type="email"
                   id="email"
                   class="form-input"

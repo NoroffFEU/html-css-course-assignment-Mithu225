@@ -11,6 +11,9 @@
   .footer-link-store {
     gap: 5rem;
   }
+  .top-collection {
+    text-align: center;
+  }
   .footer-bar {
     justify-content: space-between;
   }
@@ -113,11 +116,9 @@
   .submission {
     height: 500px;
   }
-  .mess-thank {
-    font-size: 3rem;
-  }
 
-  .mess-submission {
+  .mess-submission,
+  .mess-thank {
     font-size: 3rem;
   }
   .subscribe-success {
@@ -125,5 +126,9 @@
   }
   .message-subscribe {
     font-size: 3rem;
+  }
+
+  .login {
+    min-height: 30rem;
   }
 }

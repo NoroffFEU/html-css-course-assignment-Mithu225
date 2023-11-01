@@ -19,7 +19,7 @@
   <body class="top">
     <header>
       <div>
-        <h2 class="season-header">Season Sale - Up to 70% Off</h2>
+        <h1 class="season-header">Season Sale - Up to 70% Off</h1>
       </div>
 
       <section class="header-bar">
@@ -39,13 +39,17 @@
           </li>
         </ul>
         <div class="menu-icon">
-          <ion-icon size="large" name="person-circle-outline"></ion-icon>
-          <ion-icon size="large" name="cart"></ion-icon>
+          <a href="login.html" aria-label="login">
+            <ion-icon size="large" name="person-circle-outline"></ion-icon
+          ></a>
+          <a href="yourcart.html" aria-label="your cart">
+            <ion-icon size="large" name="cart"></ion-icon
+          ></a>
         </div>
       </section>
     </header>
     <div>
-      <h1 class="product-title">NEW PRODUCTS</h1>
+      <h2 class="product-title">NEW PRODUCTS</h2>
     </div>
 
     <div class="product-list">
@@ -53,11 +57,12 @@
         <div class="box">
           <div class="new-product-label">
             <p class="new-text-label">NEW</p>
-            <img src="assets/images/New.jpg" />
+            <img src="assets/images/New.jpg" alt="New label" />
           </div>
           <a href="product-detail.html"
             ><img
               src="assets/images/Product-detail1.jpg"
+              alt="Red jacket"
               class="top-collection-1"
           /></a>
 
@@ -81,11 +86,12 @@
         <div class="box">
           <div class="new-product-label">
             <p class="new-text-label">NEW</p>
-            <img src="assets/images/New.jpg" />
+            <img src="assets/images/New.jpg" alt="New label" />
           </div>
           <a href="product-detail.html"
             ><img
               src="assets/images/Product-detail2.jpg"
+              alt="Orange jacket"
               class="top-collection-1"
           /></a>
 
@@ -109,11 +115,12 @@
         <div class="box">
           <div class="new-product-label">
             <p class="new-text-label">NEW</p>
-            <img src="assets/images/New.jpg" />
+            <img src="assets/images/New.jpg" alt="New label" />
           </div>
           <a href="product-detail.html"
             ><img
               src="assets/images/Product-detail3.jpg"
+              alt="Gray 12 jacket"
               class="top-collection-1"
           /></a>
 
@@ -138,11 +145,12 @@
         <div class="box">
           <div class="new-product-label">
             <p class="new-text-label">NEW</p>
-            <img src="assets/images/New.jpg" />
+            <img src="assets/images/New.jpg" alt="New label" />
           </div>
           <a href="product-detail.html"
             ><img
               src="assets/images/Product-detail4.jpg"
+              alt="Black M13 jacket"
               class="top-collection-1"
           /></a>
 
@@ -167,12 +175,13 @@
         <div class="box">
           <div class="new-product-label">
             <p class="new-text-label">NEW</p>
-            <img src="assets/images/New.jpg" />
+            <img src="assets/images/New.jpg" alt="New label" />
           </div>
           <a href="product-detail.html"
             ><img
               class="top-collection-3"
               src="assets/images/Product-detail5.jpg"
+              alt="Gray 14 jacket"
           /></a>
           <div class="collection-star-icon">
             <ion-icon size="large" name="star"></ion-icon>
@@ -194,12 +203,13 @@
         <div class="box">
           <div class="new-product-label">
             <p class="new-text-label">NEW</p>
-            <img src="assets/images/New.jpg" />
+            <img src="assets/images/New.jpg" alt="New label" />
           </div>
           <a href="product-detail.html"
             ><img
               class="top-collection-3"
               src="assets/images/Product-detail6.jpg"
+              alt="Men 15 jacket"
           /></a>
           <div class="collection-star-icon">
             <ion-icon size="large" name="star"></ion-icon>
@@ -222,7 +232,11 @@
     <footer>
       <div class="footer-bar">
         <div class="footer-left">
-          <img class="footer-logo" src="assets/images/Logo.jpg" />
+          <img
+            class="footer-logo"
+            src="assets/images/Logo.jpg"
+            alt="Rainyday logo"
+          />
           <div>
             <p class="footer-detail">
               Lorem ipsum dolor sit amet consectetur. Amet sed nulla nibh ac sit
@@ -242,6 +256,7 @@
             <div class="email-subscribe">
               <form action="/login" class="footer-subscribe">
                 <input
+                aria-label="email"
                   type="email"
                   id="email"
                   class="form-input"

@@ -18,7 +18,7 @@
   <body>
     <header>
       <div>
-        <h2 class="season-header">Season Sale - Up to 70% Off</h2>
+        <h1 class="season-header">Season Sale - Up to 70% Off</h1>
       </div>
 
       <section class="header-bar">
@@ -38,10 +38,10 @@
           </li>
         </ul>
         <div class="menu-icon">
-          <a href="login.html">
+          <a href="login.html" aria-label="login">
             <ion-icon size="large" name="person-circle-outline"></ion-icon
           ></a>
-          <a href="yourcart.html">
+          <a href="yourcart.html" aria-label="your cart">
             <ion-icon size="large" name="cart"></ion-icon
           ></a>
         </div>
@@ -57,20 +57,23 @@
           <a href="product-detail.html"
             ><img
               src="assets/images/Product-detail4.jpg"
+              alt="Selected product"
               class="top-collection-1"
           /></a>
         </div>
       </div>
       <div class="product-detail-right">
-        <h1 class="product-text-detail">Black M13</h1>
+        <h2 class="product-text-detail">Black M13</h2>
         <p class="product-text-detail">$250</p>
         <img
           class="selection-product"
           src="assets/images/section-product.jpg"
+          alt="Small selected product rotate left"
         />
         <img
           class="selection-product"
           src="assets/images/selection-product.jpg"
+          alt="Small selected product rotate right"
         />
         <div class="collection-product-color">
           <p class="text-color">
@@ -135,7 +138,11 @@
     <footer>
       <div class="footer-bar">
         <div class="footer-left">
-          <img class="footer-logo" src="assets/images/Logo.jpg" />
+          <img
+            class="footer-logo"
+            src="assets/images/Logo.jpg"
+            alt="Rainyday logo"
+          />
           <div>
             <p class="footer-detail">
               Lorem ipsum dolor sit amet consectetur. Amet sed nulla nibh ac sit
@@ -155,6 +162,7 @@
             <div class="email-subscribe">
               <form action="/login" class="footer-subscribe">
                 <input
+                aria-label="email"
                   type="email"
                   id="email"
                   class="form-input"

@@ -18,11 +18,11 @@
   <body>
     <header>
       <div>
-        <h2 class="season-header">Season Sale - Up to 70% Off</h2>
+        <h1 class="season-header">Season Sale - Up to 70% Off</h1>
       </div>
 
       <section class="header-bar">
-        <img src="assets/images/Logo.jpg" />
+        <img src="assets/images/Logo.jpg" alt="Rainyday logo" />
         <ul class="menu-bar">
           <li>
             <a class="menu-bar-item" href="index.html">HOME</a>
@@ -38,12 +38,12 @@
           </li>
         </ul>
         <div class="menu-icon">
-          <a href="login.html">
-            <ion-icon size="large" name="person-circle-outline"></ion-icon>
-          </a>
-          <a href="yourcart.html">
-            <ion-icon size="large" name="cart"></ion-icon>
-          </a>
+          <a href="login.html" aria-label="login">
+            <ion-icon size="large" name="person-circle-outline"></ion-icon
+          ></a>
+          <a href="yourcart.html" aria-label="your cart">
+            <ion-icon size="large" name="cart"></ion-icon
+          ></a>
         </div>
       </section>
     </header>
@@ -53,7 +53,7 @@
         class="checkout-success-icon"
         name="checkmark-circle-outline"
       ></ion-icon>
-      <h1 class="thanks-text">Thank you for your purchase!</h1>
+      <h2 class="thanks-text">Thank you for your purchase!</h2>
       <p class="checkout-message">
         You will receive an order confirmation email with details of your order
         and a link to track its progress
@@ -79,7 +79,10 @@
       </div>
       <div class="items-info">
         <div class="checkout-info-left">
-          <img src="assets/images/Checkout success.png" />
+          <img
+            src="assets/images/Checkout-success.png"
+            alt="The product checkout success"
+          />
         </div>
         <div class="checkout-info-center">
           <p>BLACK M13</p>
@@ -112,7 +115,11 @@
     <footer>
       <div class="footer-bar">
         <div class="footer-left">
-          <img class="footer-logo" src="assets/images/Logo.jpg" />
+          <img
+            class="footer-logo"
+            src="assets/images/Logo.jpg"
+            alt="Rainyday logo"
+          />
           <div>
             <p class="footer-detail">
               Lorem ipsum dolor sit amet consectetur. Amet sed nulla nibh ac sit
@@ -132,6 +139,7 @@
             <div class="email-subscribe">
               <form action="/login" class="footer-subscribe">
                 <input
+                aria-label="email"
                   type="email"
                   id="email"
                   class="form-input"
