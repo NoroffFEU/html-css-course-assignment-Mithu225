@@ -113,6 +113,9 @@
   .slogan {
     width: 5rem;
   }
+  .about {
+    padding-right: 20%;
+  }
   .about-title {
     font-size: 2rem;
   }
@@ -139,6 +142,9 @@
   }
   .your-cart-title {
     font-size: 3rem;
+  }
+  .button-back-checkout {
+        gap: 1rem;
   }
 
   .addcart-title {

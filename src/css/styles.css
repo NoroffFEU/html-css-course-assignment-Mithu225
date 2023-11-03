@@ -321,7 +321,8 @@ div.footer-link-store {
   font-weight: bold;
   line-height: normal;
 }
-div.footer-shop-details a {
+.footer-shop-details a,
+.footer-help-details a {
   color: var(--color-text-gray);
   font-size: 1rem;
   font-style: normal;
@@ -330,14 +331,7 @@ div.footer-shop-details a {
   text-decoration: none;
 }
 
-div.footer-help-details {
-  color: var(--color-text-gray);
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-}
-
-div.footer-info-details {
+div.footer-info-details a {
   color: var(--color-text-gray);
   font-size: 1rem;
   font-style: normal;
@@ -346,7 +340,11 @@ div.footer-info-details {
   gap: 25px;
   flex-direction: column;
 }
-
+.footer-info-details a:hover,
+.footer-shop-details a:hover,
+.footer-help-details a:hover {
+  color: blue;
+}
 div.footer-location,
 div.footer-email,
 div.footer-phone,
@@ -354,7 +352,8 @@ div.footer-fax {
   display: flex;
   align-items: center;
   justify-content: left;
-  gap: 20px;
+  gap: 1rem;
+  padding: 0.2rem;
 }
 
 p.footer-location-text,
@@ -1011,18 +1010,17 @@ td {
 
 /* about */
 .about {
-  position: relative;
+  background-image: url(/assets/images/About-us.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .about-banner {
   width: 100%;
 }
 
-.slogan {
-  position: absolute;
-  top: 10%;
-  left: 30%;
-  text-align: center;
-}
 .about-slogan-row1 {
   flex-direction: column;
   flex-shrink: 0;
@@ -1044,12 +1042,13 @@ td {
   flex-wrap: wrap;
   padding: 2rem;
   gap: 3rem;
+  justify-content: space-evenly;
 }
 
 .about-title {
   color: var(--color-text-dark);
   font-family: "Arial Rounded MT Bold";
-  padding-left: 2rem;
+  padding-left: 6rem;
   font-style: normal;
   font-weight: 400;
 }
@@ -1060,17 +1059,17 @@ td {
   text-align: justify;
   font-style: normal;
   font-weight: 400;
-  float: left;
+  font-size: 1rem;
 }
 
 .image-story2 {
-  float: left;
-  max-width: 100%;
+  height: auto;
+  width: 20rem;
 }
 
 .image-story1 {
-  float: right;
-  max-width: 100%;
+  width: auto;
+  height: 25rem;
 }
 
 .story-bottom {
@@ -1084,7 +1083,7 @@ td {
   text-align: justify;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px;
+  font-size: 1rem;
 }
 
 /* contact page */

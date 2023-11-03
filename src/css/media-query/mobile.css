@@ -139,6 +139,9 @@
   .slogan {
     width: 3rem;
   }
+  .about {
+        padding: 3rem;
+  }
   .about-title {
     font-size: 1.5rem;
   }
