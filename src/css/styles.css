@@ -1,11 +1,11 @@
 /* Use import to split up your CSS into manageable chunks */
-@import url("./_reset.css");
+@import url("./reset.css");
 /* Files that are only needed to be imported are called partials */
 /* These are marked with an underscore: */
-@import url("./_variables.css");
+@import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
 
-@import url("./_media-query.css");
+@import url("./media-query.css");
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -128,7 +128,6 @@ header {
 }
 
 .email-subscribe {
- 
   padding-bottom: 1rem;
 }
 
@@ -209,7 +208,7 @@ div.home-product1 {
 
 div.new-product-label {
   position: absolute;
-  top:0;
+  top: 0;
   left: -2rem;
 }
 p.new-text-label {
@@ -1125,7 +1124,6 @@ td {
 .login {
   position: relative;
   display: flex;
-  
 }
 
 .login-bottom {
@@ -1141,13 +1139,12 @@ td {
   left: 0;
   background-color: #ffffff27;
   height: 100%;
-  padding:3rem;
+  padding: 3rem;
 }
 
 .form-info {
   display: flex;
   flex-direction: column;
-  
 }
 
 .login-title {
