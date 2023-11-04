@@ -791,7 +791,7 @@ h3.product-detail-link {
 }
 /* subscribe page */
 .subscribe-success {
-  background-image: url(assets/images/Subscribed.jpg);
+  background-image: url(/assets/images/Subscribed.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -822,7 +822,7 @@ h3.product-detail-link {
 
 /* submission */
 .submission {
-  background-image: url(assets/images/Submission.jpg);
+  background-image: url(/assets/images/Submission.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -955,7 +955,7 @@ td {
 
 /* about */
 .about {
-  background-image: url(assets/images/About-us.jpg);
+  background-image: url(/assets/images/About-us.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
