@@ -955,7 +955,7 @@ td {
 
 /* about */
 .about {
-  background-image: url(/assets/images/About-us.jpg);
+  background-image: url(assets/images/About-us.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
