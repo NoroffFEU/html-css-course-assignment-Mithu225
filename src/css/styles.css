@@ -16,8 +16,8 @@ header {
 }
 
 .season-header {
-  background-color: #3d604e;
-  height: 100px;
+  background-color: var(--color-green-light);
+  height: 6.25rem;
   color: var(--color-text-light);
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@ header {
   display: flex;
 
   align-items: center;
-  gap: 60px;
+  gap: 3.5rem;
 }
 
 .menu-icon a {
@@ -146,6 +146,10 @@ header {
 
 .menu-bar-item--selected {
   font-weight: bold;
+  background-color: var(--color-green-light);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 1rem;
 }
 
 .header-bar {
@@ -461,29 +465,20 @@ h3.product-detail-link {
 }
 .box-selection-size {
   display: flex;
+  gap: 1rem;
 }
 
 .box-small-size {
-  width: 119.923px;
-  height: 67px;
+  padding: 1rem 2rem;
   background-color: var(--color-size);
   text-align: center;
-  padding: 20px;
   font-family: Arial;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
 }
-.box-large-size {
-  width: 119.923px;
-  height: 67px;
+.box-small-size + .selected {
   background-color: var(--color-size-xxl);
-  text-align: center;
-  padding: 20px;
-  font-family: "Arial";
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
 }
 
 .quantity-control {
@@ -666,25 +661,6 @@ h3.product-detail-link {
   color: green;
 }
 
-.con-shopping {
-  width: 211px;
-  height: 40px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  border: 1px solid var(--color-border-light);
-  background-color: var(--color-button-checkout);
-}
-
-.purchase,
-.button-view-cart {
-  width: 116px;
-  height: 40px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  background-color: var(--color-text-dark);
-  color: var(--color-text-light);
-}
-
 .img-card {
   width: 100%;
   display: flex;
@@ -720,13 +696,13 @@ h3.product-detail-link {
 .order-info-left {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .orderID,
 .orderDate {
   display: flex;
-  gap: 10px;
+  gap: 1rem;
   color: var(--color-text-gray);
 
   font-size: 1.5rem;
@@ -769,7 +745,7 @@ h3.product-detail-link {
 }
 
 .checkout-info-left > img {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .checkout-info-right {
@@ -792,7 +768,7 @@ h3.product-detail-link {
 }
 
 .total {
-  gap: 90px;
+  gap: 5.5rem;
 }
 
 .button-back {
@@ -971,37 +947,6 @@ td {
   color: var(--color-text-sub);
 }
 
-.button-back-home-white {
-  width: 211px;
-  height: 39px;
-  flex-shrink: 0;
-  border-radius: 5px;
-  border: 1px solid var(--color-border-light);
-  background-color: var(--color-text-light);
-  color: var(--color-text-gray);
-  font-family: "Arial Rounded MT Bold";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  cursor: pointer;
-}
-
-.button-checkout {
-  width: 116px;
-  height: 39px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  background-color: var(--color-text-dark);
-  color: var(--color-text-light);
-  font-family: "Arial Rounded MT Bold";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  cursor: pointer;
-}
-
 .button-back-checkout {
   display: flex;
   justify-content: center;
@@ -1064,18 +1009,11 @@ td {
 
 .image-story2 {
   height: auto;
-  width: 20rem;
 }
 
 .image-story1 {
   width: auto;
   height: 25rem;
-}
-
-.story-bottom {
-  display: flex;
-  gap: 250px;
-  padding-bottom: 100px;
 }
 .text-story2 {
   flex-shrink: 0;
@@ -1101,20 +1039,6 @@ td {
   padding: 1rem 0;
 }
 
-.button-send {
-  color: var(--color-text-light);
-
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  width: 137px;
-  height: 57px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  background-color: var(--color-button-send);
-  cursor: pointer;
-}
-
 /* login page */
 .login-form label {
   color: var(--color-border-light);
@@ -1127,6 +1051,8 @@ td {
 
 .login-bottom {
   display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .login-banner {
@@ -1150,23 +1076,21 @@ td {
   flex-shrink: 0;
   color: var(--color-text-light);
   padding-bottom: 1rem;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
 }
 
 .cant-login,
 .reset {
-  width: 180px;
   flex-shrink: 0;
   color: var(--color-text-light);
-
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 .button-login-page {
-  padding-top: 30px;
+  padding-top: 2rem;
 }

@@ -70,6 +70,8 @@
   }
   .slogan {
     width: 15rem;
+    
+}
   }
   .about {
         padding-right:30%;
@@ -86,6 +88,9 @@
   }
   .text-story2 {
     max-width: 40%;
+  }
+  .image-story2 {
+    width: 30rem;
   }
 
   .contact-form {

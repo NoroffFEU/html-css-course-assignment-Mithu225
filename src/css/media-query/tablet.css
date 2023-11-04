@@ -127,7 +127,9 @@
   .text-story2 {
     max-width: 100%;
   }
-
+  .image-story2 {
+    width: 25rem;
+  }
   .contact-form {
     max-width: 100%;
   }
@@ -144,7 +146,7 @@
     font-size: 3rem;
   }
   .button-back-checkout {
-        gap: 1rem;
+    gap: 1rem;
   }
 
   .addcart-title {
