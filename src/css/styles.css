@@ -822,7 +822,7 @@ h3.product-detail-link {
 
 /* submission */
 .submission {
-  background-image: url(/assets/images/Submission.png);
+  background-image: url(/assets/images/Submission.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -859,7 +859,7 @@ h3.product-detail-link {
 }
 /* add to cart */
 .add-cart {
-  background-image: url("/assets/images/add-to-cart.png");
+  background-image: url("/assets/images/add-to-cart.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
