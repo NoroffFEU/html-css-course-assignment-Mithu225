@@ -61,6 +61,7 @@ header {
   outline: none;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button-primary {
@@ -298,19 +299,7 @@ div.footer-right-subscribe {
   gap: 10px;
 }
 
-.button-subscribe {
-  padding: 10px 20px;
-  border-radius: 10px;
-  color: var(--color-text-light);
-  font-family: "Arial Rounded MT Bold";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  background-color: var(--color-text-sub);
-  text-decoration: none;
-  cursor: pointer;
-}
+
 
 div.footer-link-store {
   display: flex;

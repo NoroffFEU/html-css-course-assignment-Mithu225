@@ -8,11 +8,12 @@
     font-size: 1.5rem;
     padding-bottom: 1rem;
   }
-  .footer-link-store {
-    gap: 5rem;
-  }
+  
   .top-collection {
     text-align: center;
+  }
+  .footer-link-store {
+    gap: 5rem;
   }
   .footer-bar {
     justify-content: space-between;
@@ -72,7 +73,7 @@
     width: 15rem;
     
 }
-  }
+  
   .about {
         padding-right:30%;
   }
@@ -139,4 +140,5 @@
   .login {
     min-height: 30rem;
   }
+
 }
