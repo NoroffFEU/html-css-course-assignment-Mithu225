@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with the website's administrators, owners, or customer support team"
+    />
+    <title>Rainyday | Contact</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 class="season-header">Season Sale - Up to 70% Off</h1>
+      </div>
+
+      <section class="header-bar">
+        <img src="assets/images/Logo.jpg" alt="Rainyday logo" />
+        <ul class="menu-bar">
+          <li>
+            <a class="menu-bar-item" href="index.html">HOME</a>
+          </li>
+          <li>
+            <a class="menu-bar-item" href="product.html">PRODUCT</a>
+          </li>
+          <li><a class="menu-bar-item" href="about.html">ABOUT</a></li>
+          <li>
+            <a class="menu-bar-item menu-bar-item--selected" href="contact.html"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+        <div class="menu-icon">
+          <a href="login.html" aria-label="login">
+            <ion-icon size="large" name="person-circle-outline"></ion-icon
+          ></a>
+          <a href="yourcart.html" aria-label="your cart">
+            <ion-icon size="large" name="cart"></ion-icon
+          ></a>
+        </div>
+      </section>
+    </header>
+    <div>
+      <img
+        class="contact-banner"
+        src="assets/images/Contact.jpg"
+        alt="Contact information"
+      />
+    </div>
+    <div class="submission-form">
+      <form class="contact-form-info">
+        <h2 class="text form-title">Send Message</h2>
+        <div class="form-input-container-column contact-form">
+          <div class="form-input-item">
+            <label for="email">Username or Email</label>
+            <input type="text" id="email" name="email" />
+          </div>
+          <div class="form-input-item">
+            <label for="phone">Phone</label>
+            <input placeholder="1234567890" id="phone" name="phone" />
+          </div>
+
+          <div class="form-input-item">
+            <label for="message">Type your message</label>
+            <textarea
+              aria-label="message"
+              rows="10"
+              cols="45"
+              name="comment"
+              form="userform"
+              id="message"
+            ></textarea>
+          </div>
+
+          <div class="button-send-message">
+            <a href="submission.html"
+              ><button type="button" class="button button-primary">
+                Send
+              </button></a
+            >
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer-bar">
+        <div class="footer-left">
+          <img
+            class="footer-logo"
+            src="assets/images/Logo.jpg"
+            alt="Rainyday logo"
+          />
+          <div>
+            <p class="footer-detail">
+              Lorem ipsum dolor sit amet consectetur. Amet sed nulla nibh ac sit
+              netus. Est aenean neque consectetur id sed tempus.
+            </p>
+          </div>
+          <div class="footer-icon">
+            <ion-icon size="large" name="logo-facebook"></ion-icon>
+            <ion-icon size="large" name="logo-google"></ion-icon>
+            <ion-icon size="large" name="logo-twitter"></ion-icon>
+            <ion-icon size="large" name="logo-instagram"></ion-icon>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-right-subscribe">
+            <div class="email-subscribe">
+              <form action="/login" class="footer-subscribe">
+                <input
+                  aria-label="email"
+                  type="email"
+                  id="email"
+                  class="form-input"
+                  placeholder="Enter your email"
+                />
+              </form>
+            </div>
+            <a class="button button-error" href="subscribed.html">SUBSCRIBE</a>
+          </div>
+          <div class="footer-link-store">
+            <div class="footer-right-shop">
+              <p class="footer-shop">SHOP</p>
+              <div class="footer-shop-details">
+                <a href="product.html">
+                  <p>Mens</p>
+                </a>
+                <a href="product.html">
+                  <p>Womens</p>
+                </a>
+              </div>
+            </div>
+            <div class="footer-right-help">
+              <p class="footer-help">HELP</p>
+              <div class="footer-help-details">
+                <a href="#"><p>Shipping & Return</p></a>
+                <a href="#"><p>Customer service</p></a>
+                <a href="about.html"><p>About us</p></a>
+                <a href="contact.html"><p>Contacts</p></a>
+              </div>
+            </div>
+            <div class="footer-right-info">
+              <p class="footer-info">STORE INFORMATION</p>
+              <div class="footer-info-details">
+                <div class="footer-location">
+                  <ion-icon name="location"></ion-icon>
+                  <p class="footer-location-text">Rainydays Store,Avenue 123</p>
+                </div>
+                <div class="footer-email">
+                  <ion-icon name="mail"></ion-icon>
+                  <p class="footer-email-text">Email us: Rainydays@demo.com</p>
+                </div>
+                <div class="footer-phone">
+                  <ion-icon name="call"></ion-icon>
+                  <p class="footer-phone-text">Call us:012356789</p>
+                </div>
+                <div class="footer-fax">
+                  <ion-icon name="copy"></ion-icon>
+                  <p class="footer-fax-text">Fax:123567</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
