@@ -42,8 +42,9 @@
             <ion-icon size="large" name="person-circle-outline"></ion-icon
           ></a>
           <a href="yourcart.html" aria-label="your cart">
-            <ion-icon size="large" name="cart"></ion-icon
-          ></a>
+            <ion-icon size="large" name="cart"></ion-icon>
+            <div id="your-cart-number"></div>
+          </a>
         </div>
       </section>
     </header>
@@ -77,21 +78,40 @@
           <p class="text address-ship">House no.00, Street A, City</p>
         </div>
       </div>
-      <div class="items-info">
-        <div class="checkout-info-left">
-          <img
-            src="assets/images/Checkout-success.png"
-            alt="The product checkout success"
-          />
+      <div class="items-container">
+        <div class="items-info">
+          <div class="checkout-info-left">
+            <img
+              src="assets/images/Checkout-success.png"
+              alt="The product checkout success"
+            />
+          </div>
+          <div class="checkout-info-center">
+            <p>BLACK M13</p>
+            <p>Size: M</p>
+            <p>Qty:1</p>
+          </div>
+          <div class="checkout-info-right">
+            <p>Total</p>
+            <p>$250</p>
+          </div>
         </div>
-        <div class="checkout-info-center">
-          <p>BLACK M13</p>
-          <p>Size: M</p>
-          <p>Qty:1</p>
-        </div>
-        <div class="checkout-info-right">
-          <p>Total</p>
-          <p>$250</p>
+        <div class="items-info">
+          <div class="checkout-info-left">
+            <img
+              src="assets/images/Checkout-success.png"
+              alt="The product checkout success"
+            />
+          </div>
+          <div class="checkout-info-center">
+            <p>BLACK M13</p>
+            <p>Size: M</p>
+            <p>Qty:1</p>
+          </div>
+          <div class="checkout-info-right">
+            <p>Total</p>
+            <p>$250</p>
+          </div>
         </div>
       </div>
     </div>
@@ -103,7 +123,7 @@
       <hr size="1" width="100%" color="black" />
       <div class="total">
         <p>Total:</p>
-        <p>$250</p>
+        <p class="total-value">$250</p>
       </div>
     </div>
     <div class="button-back">
@@ -195,5 +215,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/core.js"></script>
+    <script src="./js/checkout.js"></script>
   </body>
 </html>

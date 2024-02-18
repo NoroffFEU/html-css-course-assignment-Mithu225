@@ -39,102 +39,20 @@
         </ul>
         <div class="menu-icon">
           <a href="login.html" aria-label="login">
-            <ion-icon size="large" name="person-circle-outline"></ion-icon
-          ></a>
+            <ion-icon size="large" name="person-circle-outline"></ion-icon>
+          </a>
           <a href="yourcart.html" aria-label="your cart">
-            <ion-icon size="large" name="cart"></ion-icon
-          ></a>
+            <ion-icon size="large" name="cart"></ion-icon>
+            <div id="your-cart-number"></div>
+          </a>
         </div>
       </section>
     </header>
 
     <div class="breadcrumb">
-      <h3 class="product-detail-link">PRODUCT / MEN / BLACK M13</h3>
+      <!-- <h3 class="product-detail-link">PRODUCT / MEN / BLACK M13</h3> -->
     </div>
-    <div class="product-detail">
-      <div class="product-detail-left">
-        <div class="box-product-detail-left">
-          <a href="product-detail.html"
-            ><img
-              src="assets/images/Product-detail4.jpg"
-              alt="Selected product"
-              class="top-collection-1"
-          /></a>
-        </div>
-      </div>
-      <div class="product-detail-right">
-        <h2 class="product-text-detail">Black M13</h2>
-        <p class="product-text-detail">$250</p>
-        <img
-          class="selection-product"
-          src="assets/images/section-product.jpg"
-          alt="Small selected product rotate left"
-        />
-        <img
-          class="selection-product"
-          src="assets/images/selection-product.jpg"
-          alt="Small selected product rotate right"
-        />
-        <div class="collection-product-color">
-          <p class="text-color">
-            COLOR :
-            <ion-icon class="color1" size="small" name="ellipse"></ion-icon>
-            <ion-icon class="color2" size="small" name="ellipse"></ion-icon>
-            <ion-icon class="color3" size="small" name="ellipse"></ion-icon>
-          </p>
-        </div>
-        <div class="text-right-detail">
-          <p class="text-detail">SIZE:</p>
-          <p class="select-size">Please select size</p>
-          <p class="find-size">Find Your Size</p>
-        </div>
-        <div class="box-selection-size">
-          <p class="box-small-size">S</p>
-          <p class="box-small-size">M</p>
-          <p class="box-small-size">L</p>
-          <p class="box-small-size">XL</p>
-          <p class="box-small-size selected">XXL</p>
-        </div>
-        <div class="quantity-product">
-          <label for="quantity">Quantity</label>
-
-          <div class="quantity-control" data-quantity="">
-            <button class="quantity-btn" data-quantity-minus="">
-              <ion-icon size="large" name="remove"></ion-icon>
-            </button>
-            <input
-              type="number"
-              class="quantity-input"
-              value="1"
-              step="1"
-              min="1"
-              max=""
-              name="quantity"
-            />
-            <button class="quantity-btn" data-quantity-plus="">
-              <ion-icon size="large" name="add"></ion-icon>
-            </button>
-          </div>
-        </div>
-        <div class="button-cart">
-          <a href="addcart.html">
-            <button class="button button-dark">ADD TO CART</button></a
-          >
-
-          <a href="checkout.html">
-            <button class="button button-error">BUY NOW</button></a
-          >
-        </div>
-        <div class="product-description">
-          <p>Product details:</p>
-          <p class="text-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-            mollitia iste veniam tempora sunt, quam, quo fugit officia
-            voluptates nesciunt laudantium nam? non.
-          </p>
-        </div>
-      </div>
-    </div>
+    <div class="product-detail"></div>
     <footer>
       <div class="footer-bar">
         <div class="footer-left">
@@ -218,5 +136,9 @@
         </div>
       </div>
     </footer>
+    <script src="./js/core.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/product-item.js"></script>
+    <script src="./js/product-detail.js"></script>
   </body>
 </html>
